@@ -1,4 +1,3 @@
-// Traduções para os textos
 const translations = {
   pt: {
     title: "COMMAND Z",
@@ -65,15 +64,35 @@ const translations = {
       "Los admins tienen la última palabra."
     ],
     footerText: "© 2025 COMMAND Z. Todos los derechos reservados."
+  },
+  ru: {
+    title: "COMMAND Z",
+    subtitle: "Присоединяйтесь к нам в Discord!",
+    discordBtn: "Войти в Discord",
+    infoTitle: "Информация о сервере",
+    nameLabel: "Имя:",
+    serverLabel: "Сервер:",
+    serverName: "COMMAND Z",
+    serverType: "Пиратский/Оригинальный",
+    modsLabel: "Моды:",
+    modsList: "Trader, BaseBuildingPlus, Weapon Redux",
+    wipeLabel: "Вайп:",
+    wipeInfo: "Каждые 3 месяца (1-го числа)",
+    rulesTitle: "Правила сервера",
+    rulesList: [
+      "Запрещены читы и баги.",
+      "Уважайте всех игроков.",
+      "Запрещено убивать в безопасных зонах.",
+      "Решение админов — окончательное."
+    ],
+    footerText: "© 2025 COMMAND Z. Все права защищены."
   }
 };
 
-// Função para trocar os textos da página de acordo com idioma
 function setLanguage(lang) {
   const tr = translations[lang];
   if (!tr) return;
 
-  // Atualizar texto na página
   document.getElementById('title').textContent = tr.title;
   document.getElementById('subtitle').textContent = tr.subtitle;
   document.getElementById('discordBtn').textContent = tr.discordBtn;
@@ -98,32 +117,24 @@ function setLanguage(lang) {
 
   document.getElementById('footerText').textContent = tr.footerText;
 
-  // Atualizar botão ativo da lista de idiomas
-  document.querySelectorAll('.language-selector button').forEach(btn => {
-    btn.classList.remove('active');
-    btn.removeAttribute('aria-current');
-  });
-  const activeBtn = document.querySelector(`.language-selector button[data-lang="${lang}"]`);
-  if (activeBtn) {
-    activeBtn.classList.add('active');
-    activeBtn.setAttribute('aria-current', 'true');
-  }
+  // Atualiza o localStorage
+  localStorage.setItem('lang', lang);
 }
 
-// Adiciona evento de clique nos botões de idioma
+// Eventos de clique
 document.querySelectorAll('.language-selector button').forEach(button => {
-  button.addEventListener('click', () => {
-    const selectedLang = button.getAttribute('data-lang');
-    setLanguage(selectedLang);
-  });
+  button.addEvent
+// Mostrar/ocultar seletor de idioma
+const toggleBtn = document.getElementById('languageToggle');
+const langMenu = document.querySelector('.language-selector');
+
+toggleBtn.addEventListener('click', () => {
+  langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
 });
 
-// Detecta idioma do navegador e seta automaticamente (fallback para português)
-const userLang = navigator.language || navigator.userLanguage;
-if (userLang.startsWith('en')) {
-  setLanguage('en');
-} else if (userLang.startsWith('es')) {
-  setLanguage('es');
-} else {
-  setLanguage('pt');
-}
+// Fechar menu se clicar fora
+document.addEventListener('click', (e) => {
+  if (!toggleBtn.contains(e.target) && !langMenu.contains(e.target)) {
+    langMenu.style.display = 'none';
+  }
+});

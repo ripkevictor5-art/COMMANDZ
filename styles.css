@@ -1,21 +1,71 @@
+/* === Reset e estilo base === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #121212;
   color: #fff;
 }
-/* Lista de idiomas vertical no topo direito */
-.language-selector {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(30, 30, 30, 0.9);
-  border-radius: 8px;
-  padding: 8px 12px;
-  user-select: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  z-index: 1000;
+
+/* === Barra superior com links e idioma === */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #1c1c1c;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
+
+.nav-links a {
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #db3b3b;
+}
+
+/* === Idioma dropdown === */
+.language-dropdown {
+  position: relative;
+}
+
+#languageToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#languageToggle:hover {
+  background-color: #333;
+}
+
+/* === Seletor de idiomas ocultável === */
+.language-selector {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  min-width: 120px;
+}
+
 .language-selector button {
   background: none;
   border: none;
@@ -30,11 +80,13 @@ body {
   width: 100%;
   text-align: right;
 }
-.language-selector button:hover, .language-selector button.active {
+
+.language-selector button:hover,
+.language-selector button.active {
   background-color: #db3b3b;
-  outline: none;
 }
 
+/* === Imagem e título === */
 .top-image {
   position: relative;
   width: 100%;
@@ -50,27 +102,32 @@ body {
   letter-spacing: 1px;
   user-select: none;
 }
+
 .title-container {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .title-container img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 .top-image h1 {
   font-size: 30px;
   margin: 0;
   text-shadow: 0 0 6px #000;
 }
+
 .top-image p {
   margin: 12px 0;
   font-weight: normal;
   font-size: 14px;
   text-shadow: 0 0 6px #000;
 }
+
 .top-image a {
   text-decoration: none;
   background-color: #db3b3b;
@@ -82,10 +139,12 @@ body {
   box-shadow: 0 2px 5px rgba(219, 59, 59, 0.6);
   transition: background-color 0.3s ease;
 }
+
 .top-image a:hover {
   background-color: #8b1a1a;
 }
 
+/* === Conteúdo === */
 .container {
   max-width: 700px;
   margin: 30px auto 50px auto;
@@ -99,6 +158,7 @@ body {
   margin-bottom: 25px;
   box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
+
 .box h2 {
   font-weight: 700;
   border-bottom: 1px solid #444;
@@ -106,6 +166,7 @@ body {
   margin-bottom: 12px;
 }
 
+/* === Listas === */
 ul, ol {
   padding-left: 20px;
 }
@@ -120,6 +181,7 @@ ol li {
   list-style-type: decimal;
 }
 
+/* === Rodapé === */
 .footer {
   text-align: center;
   color: #aaa;

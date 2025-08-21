@@ -7,16 +7,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Lista de idiomas vertical -->
-  <div class="language-selector" role="list" aria-label="Seleção de idioma">
-    <button type="button" data-lang="pt" class="active" aria-current="true">Português</button>
-    <button type="button" data-lang="en">English</button>
-    <button type="button" data-lang="es">Español</button>
+
+  <!-- Barra de navegação superior -->
+  <div class="top-bar">
+    <div class="nav-links">
+      <a href="#novidades">Novidades</a>
+      <a href="#vips">VIPs</a>
+      <a href="#youtube">YouTube</a>
+    </div>
+    <div class="language-dropdown">
+      <button id="languageToggle">🌐 Idioma ▾</button>
+      <div class="language-selector" role="list" aria-label="Seleção de idioma">
+        <button type="button" data-lang="pt">Português</button>
+        <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="es">Español</button>
+        <button type="button" data-lang="ru">Русский</button>
+      </div>
+    </div>
   </div>
 
+  <!-- Conteúdo principal -->
   <div class="top-image">
     <div class="title-container">
-      <img src="https://cdn.discordapp.com/attachments/1362997196022218782/1408122849733902426/FORFOAS.png?ex=68a89819&is=68a74699&hm=a5442031a19730d06385babb504858d6efeb92ab670fa79948ef75aa50d88662&" />
+      <img src="https://cdn.discordapp.com/attachments/1362997196022218782/1408122849733902426/FORFOAS.png" alt="Logo COMMAND Z" />
       <h1 id="title">COMMAND Z</h1>
     </div>
     <p id="subtitle">Junte-se a nós no Discord!</p>
