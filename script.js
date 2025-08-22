@@ -1,140 +1,74 @@
-const translations = {
-  pt: {
-    title: "COMMAND Z",
-    subtitle: "Junte-se a nós no Discord!",
-    discordBtn: "Entrar no Discord",
-    infoTitle: "Informações do Servidor",
-    nameLabel: "Nome:",
-    serverLabel: "Servidor:",
-    serverName: "COMMAND Z",
-    serverType: "Pirata/original",
-    modsLabel: "Mods:",
-    modsList: "Trader, BaseBuildingPlus, Weapon Redux",
-    wipeLabel: "Wipe:",
-    wipeInfo: "3 meses (todo dia 1)",
-    rulesTitle: "Regras do Servidor",
-    rulesList: [
-      "Sem uso de cheats ou exploits.",
-      "Respeite todos os jogadores.",
-      "Proibido matar em safe zone.",
-      "Admins têm palavra final."
-    ],
-    footerText: "© 2025 COMMAND Z. Todos os direitos reservados."
-  },
-  en: {
-    title: "COMMAND Z",
-    subtitle: "Join us on Discord!",
-    discordBtn: "Join Discord",
-    infoTitle: "Server Information",
-    nameLabel: "Name:",
-    serverLabel: "Server:",
-    serverName: "COMMAND Z",
-    serverType: "Pirate/original",
-    modsLabel: "Mods:",
-    modsList: "Trader, BaseBuildingPlus, Weapon Redux",
-    wipeLabel: "Wipe:",
-    wipeInfo: "3 months (every day 1)",
-    rulesTitle: "Server Rules",
-    rulesList: [
-      "No cheats or exploits allowed.",
-      "Respect all players.",
-      "Killing in safe zones is forbidden.",
-      "Admins have the final word."
-    ],
-    footerText: "© 2025 COMMAND Z. All rights reserved."
-  },
-  es: {
-    title: "COMMAND Z",
-    subtitle: "¡Únete a nosotros en Discord!",
-    discordBtn: "Entrar en Discord",
-    infoTitle: "Información del Servidor",
-    nameLabel: "Nombre:",
-    serverLabel: "Servidor:",
-    serverName: "COMMAND Z",
-    serverType: "Pirata/original",
-    modsLabel: "Mods:",
-    modsList: "Trader, BaseBuildingPlus, Weapon Redux",
-    wipeLabel: "Wipe:",
-    wipeInfo: "3 meses (todo día 1)",
-    rulesTitle: "Reglas del Servidor",
-    rulesList: [
-      "Sin uso de cheats o exploits.",
-      "Respeta a todos los jugadores.",
-      "Prohibido matar en zonas seguras.",
-      "Los admins tienen la última palabra."
-    ],
-    footerText: "© 2025 COMMAND Z. Todos los derechos reservados."
-  },
-  ru: {
-    title: "COMMAND Z",
-    subtitle: "Присоединяйтесь к нам в Discord!",
-    discordBtn: "Войти в Discord",
-    infoTitle: "Информация о сервере",
-    nameLabel: "Имя:",
-    serverLabel: "Сервер:",
-    serverName: "COMMAND Z",
-    serverType: "Пиратский/Оригинальный",
-    modsLabel: "Моды:",
-    modsList: "Trader, BaseBuildingPlus, Weapon Redux",
-    wipeLabel: "Вайп:",
-    wipeInfo: "Каждые 3 месяца (1-го числа)",
-    rulesTitle: "Правила сервера",
-    rulesList: [
-      "Запрещены читы и баги.",
-      "Уважайте всех игроков.",
-      "Запрещено убивать в безопасных зонах.",
-      "Решение админов — окончательное."
-    ],
-    footerText: "© 2025 COMMAND Z. Все права защищены."
+function changeLanguage(lang) {
+  const infoTitle = document.getElementById("info-title");
+  const infoList = document.getElementById("info-list");
+  const rulesTitle = document.getElementById("rules-title");
+  const rulesList = document.getElementById("rules-list");
+
+  if (!infoTitle || !infoList || !rulesTitle || !rulesList) return;
+
+  if (lang === "pt") {
+    infoTitle.innerText = "Informações do Servidor";
+    infoList.innerHTML = `
+      <li><strong>Nome:</strong> COMMAND Z</li>
+      <li><strong>Servidor:</strong> Pirata/original</li>
+      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
+      <li><strong>Wipe:</strong> 3 meses (todo dia 1)</li>
+    `;
+
+    rulesTitle.innerText = "Regras do Servidor";
+    rulesList.innerHTML = `
+      <li>Sem uso de cheats ou exploits.</li>
+      <li>Respeite todos os jogadores.</li>
+      <li>Proibido matar em safe zone.</li>
+      <li>Admins têm palavra final.</li>
+    `;
+  } else if (lang === "en") {
+    infoTitle.innerText = "Server Information";
+    infoList.innerHTML = `
+      <li><strong>Name:</strong> COMMAND Z</li>
+      <li><strong>Server:</strong> Cracked/original</li>
+      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
+      <li><strong>Wipe:</strong> Every 3 months (1st of the month)</li>
+    `;
+
+    rulesTitle.innerText = "Server Rules";
+    rulesList.innerHTML = `
+      <li>No use of cheats or exploits.</li>
+      <li>Respect all players.</li>
+      <li>No killing in safe zones.</li>
+      <li>Admins have the final word.</li>
+    `;
+  } else if (lang === "es") {
+    infoTitle.innerText = "Información del Servidor";
+    infoList.innerHTML = `
+      <li><strong>Nombre:</strong> COMMAND Z</li>
+      <li><strong>Servidor:</strong> Pirata/original</li>
+      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
+      <li><strong>Wipe:</strong> Cada 3 meses (día 1)</li>
+    `;
+
+    rulesTitle.innerText = "Reglas del Servidor";
+    rulesList.innerHTML = `
+      <li>No usar trampas ni exploits.</li>
+      <li>Respeta a todos los jugadores.</li>
+      <li>Prohibido matar en zona segura.</li>
+      <li>Los admins tienen la última palabra.</li>
+    `;
+  } else if (lang === "ru") {
+    infoTitle.innerText = "Информация о сервере";
+    infoList.innerHTML = `
+      <li><strong>Имя:</strong> COMMAND Z</li>
+      <li><strong>Сервер:</strong> Пиратка/оригинал</li>
+      <li><strong>Моды:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
+      <li><strong>Сброс:</strong> Каждые 3 месяца (1 числа)</li>
+    `;
+
+    rulesTitle.innerText = "Правила сервера";
+    rulesList.innerHTML = `
+      <li>Без использования читов и эксплойтов.</li>
+      <li>Уважайте всех игроков.</li>
+      <li>Запрещено убивать в безопасной зоне.</li>
+      <li>Решение админов является окончательным.</li>
+    `;
   }
-};
-
-function setLanguage(lang) {
-  const tr = translations[lang];
-  if (!tr) return;
-
-  document.getElementById('title').textContent = tr.title;
-  document.getElementById('subtitle').textContent = tr.subtitle;
-  document.getElementById('discordBtn').textContent = tr.discordBtn;
-  document.getElementById('infoTitle').textContent = tr.infoTitle;
-  document.getElementById('nameLabel').textContent = tr.nameLabel;
-  document.getElementById('serverLabel').textContent = tr.serverLabel;
-  document.getElementById('serverName').textContent = tr.serverName;
-  document.getElementById('serverType').textContent = tr.serverType;
-  document.getElementById('modsLabel').textContent = tr.modsLabel;
-  document.getElementById('modsList').textContent = tr.modsList;
-  document.getElementById('wipeLabel').textContent = tr.wipeLabel;
-  document.getElementById('wipeInfo').textContent = tr.wipeInfo;
-  document.getElementById('rulesTitle').textContent = tr.rulesTitle;
-
-  const rulesList = document.getElementById('rulesList');
-  rulesList.innerHTML = '';
-  tr.rulesList.forEach(rule => {
-    const li = document.createElement('li');
-    li.textContent = rule;
-    rulesList.appendChild(li);
-  });
-
-  document.getElementById('footerText').textContent = tr.footerText;
-
-  // Atualiza o localStorage
-  localStorage.setItem('lang', lang);
 }
-
-// Eventos de clique
-document.querySelectorAll('.language-selector button').forEach(button => {
-  button.addEvent
-// Mostrar/ocultar seletor de idioma
-const toggleBtn = document.getElementById('languageToggle');
-const langMenu = document.querySelector('.language-selector');
-
-toggleBtn.addEventListener('click', () => {
-  langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
-});
-
-// Fechar menu se clicar fora
-document.addEventListener('click', (e) => {
-  if (!toggleBtn.contains(e.target) && !langMenu.contains(e.target)) {
-    langMenu.style.display = 'none';
-  }
-});
