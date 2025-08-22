@@ -1,208 +1,205 @@
-// =========================
-// Traduções (Navbar, Hero, VIPs, Novidades)
-// =========================
+// Traduções centralizadas
 const translations = {
   pt: {
-    // Navbar
-    home: "Início",
-    vips: "VIPs",
-    news: "Novidades",
-    contact: "Contato",
+    home: "🏠 Home",
+    news: "📰 Novidades",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Entrar no Discord",
 
-    // Hero
-    heroTitle: "Bem-vindo ao nosso servidor!",
-    discordBtn: "Entrar no Discord",
+    // Home
+    infoTitle: "Informações do Servidor",
+    rulesTitle: "Regras do Servidor",
+    rules: [
+      "Sem uso de cheats ou exploits.",
+      "Respeite todos os jogadores.",
+      "Proibido matar em safe zone.",
+      "Admins têm palavra final."
+    ],
 
     // VIPs
-    starter: {
-      title: "⭐ STARTER",
-      desc: "Pacote inicial com recursos básicos para começar sua jornada."
-    },
-    silver: {
-      title: "⭐⭐ SILVER",
-      desc: "Inclui benefícios do STARTER + vantagens adicionais e maior limite de base."
-    },
-    gold: {
-      title: "⭐⭐⭐ GOLD",
-      desc: "Todos os benefícios anteriores + skins exclusivas e suporte avançado."
-    },
-    titanium: {
-      title: "🌌 TITANIUM",
-      desc: "O pacote mais completo, com acesso a todos os recursos, benefícios e exclusividades máximas."
-    },
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Acesso a kits básicos e prioridade em filas do servidor.",
+    vip2Title: "⭐⭐ VIP Silver",
+    vip2Desc: "Benefícios do Starter + itens exclusivos e maior limite de base.",
+    vip3Title: "⭐⭐⭐ VIP Gold",
+    vip3Desc: "Todos os benefícios anteriores + skins especiais e suporte dedicado.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanium",
+    vip4Desc: "Todos os benefícios anteriores + privilégios máximos, kits raros e atendimento exclusivo.",
 
     // Novidades
-    news1: {
-      title: "🚀 Nova atualização",
-      desc: "Novo sistema de eventos semanais chegou para deixar o jogo ainda mais dinâmico."
-    },
-    news2: {
-      title: "🛡️ Novos itens",
-      desc: "Adicionamos armas lendárias e equipamentos raros disponíveis em caixas especiais."
-    },
-    news3: {
-      title: "⚙️ Melhorias e correções",
-      desc: "Otimizamos a performance do servidor e corrigimos bugs relatados pela comunidade."
-    }
+    news1Title: "1.29 Experimental Release",
+    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
+    news2Title: "De Sobreviventes a Construtores",
+    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST",
+    news3Title: "Novo Sistema de Economia",
+    news3Desc: "Publicado por Equipe COMMAND Z | 05 Ago 2025 - 15:00 EST",
+    news4Title: "Expansão de Mapas e Eventos",
+    news4Desc: "Publicado por Equipe COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
   en: {
-    home: "Home",
-    vips: "VIPs",
-    news: "News",
-    contact: "Contact",
+    home: "🏠 Home",
+    news: "📰 News",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Join Discord",
 
-    heroTitle: "Welcome to our server!",
-    discordBtn: "Join Discord",
+    infoTitle: "Server Information",
+    rulesTitle: "Server Rules",
+    rules: [
+      "No cheats or exploits.",
+      "Respect all players.",
+      "No killing in safe zone.",
+      "Admins have the final word."
+    ],
 
-    starter: {
-      title: "⭐ STARTER",
-      desc: "Starter pack with basic resources to begin your journey."
-    },
-    silver: {
-      title: "⭐⭐ SILVER",
-      desc: "Includes STARTER benefits + extra perks and a larger base limit."
-    },
-    gold: {
-      title: "⭐⭐⭐ GOLD",
-      desc: "All previous benefits + exclusive skins and advanced support."
-    },
-    titanium: {
-      title: "🌌 TITANIUM",
-      desc: "The ultimate package with access to all resources, perks, and maximum exclusivity."
-    },
+    // VIPs
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Access to basic kits and queue priority.",
+    vip2Title: "⭐⭐ VIP Silver",
+    vip2Desc: "Starter benefits + exclusive items and higher base limit.",
+    vip3Title: "⭐⭐⭐ VIP Gold",
+    vip3Desc: "All previous benefits + special skins and dedicated support.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanium",
+    vip4Desc: "All previous benefits + maximum privileges, rare kits and exclusive service.",
 
-    news1: {
-      title: "🚀 New update",
-      desc: "A new weekly event system has arrived to make the game even more dynamic."
-    },
-    news2: {
-      title: "🛡️ New items",
-      desc: "We added legendary weapons and rare equipment available in special crates."
-    },
-    news3: {
-      title: "⚙️ Improvements and fixes",
-      desc: "We optimized server performance and fixed bugs reported by the community."
-    }
+    // News
+    news1Title: "1.29 Experimental Release",
+    news1Desc: "Published by Adam Franců | Aug 14, 2025 - 09:30 EST",
+    news2Title: "From Survivors to Builders",
+    news2Desc: "Published by Merropa | Jul 18, 2025 - 06:15 EST",
+    news3Title: "New Economy System",
+    news3Desc: "Published by COMMAND Z Team | Aug 05, 2025 - 15:00 EST",
+    news4Title: "Map Expansion and Events",
+    news4Desc: "Published by COMMAND Z Team | Aug 10, 2025 - 12:45 EST"
   },
 
   es: {
-    home: "Inicio",
-    vips: "VIPs",
-    news: "Novedades",
-    contact: "Contacto",
+    home: "🏠 Inicio",
+    news: "📰 Noticias",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Unirse al Discord",
 
-    heroTitle: "¡Bienvenido a nuestro servidor!",
-    discordBtn: "Entrar al Discord",
+    infoTitle: "Información del Servidor",
+    rulesTitle: "Reglas del Servidor",
+    rules: [
+      "Sin trampas ni exploits.",
+      "Respeta a todos los jugadores.",
+      "Prohibido matar en la zona segura.",
+      "Los administradores tienen la última palabra."
+    ],
 
-    starter: {
-      title: "⭐ STARTER",
-      desc: "Paquete inicial con recursos básicos para comenzar tu aventura."
-    },
-    silver: {
-      title: "⭐⭐ SILVER",
-      desc: "Incluye beneficios de STARTER + ventajas adicionales y mayor límite de base."
-    },
-    gold: {
-      title: "⭐⭐⭐ GOLD",
-      desc: "Todos los beneficios anteriores + skins exclusivas y soporte avanzado."
-    },
-    titanium: {
-      title: "🌌 TITANIUM",
-      desc: "El paquete más completo, con acceso a todos los recursos, beneficios y máxima exclusividad."
-    },
+    // VIPs
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Acceso a kits básicos y prioridad en colas.",
+    vip2Title: "⭐⭐ VIP Plata",
+    vip2Desc: "Beneficios de Starter + objetos exclusivos y mayor límite de base.",
+    vip3Title: "⭐⭐⭐ VIP Oro",
+    vip3Desc: "Todos los beneficios anteriores + skins especiales y soporte dedicado.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanio",
+    vip4Desc: "Todos los beneficios anteriores + privilegios máximos, kits raros y atención exclusiva.",
 
-    news1: {
-      title: "🚀 Nueva actualización",
-      desc: "Un nuevo sistema de eventos semanales llegó para hacer el juego aún más dinámico."
-    },
-    news2: {
-      title: "🛡️ Nuevos ítems",
-      desc: "Agregamos armas legendarias y equipos raros disponibles en cajas especiales."
-    },
-    news3: {
-      title: "⚙️ Mejoras y correcciones",
-      desc: "Optimizamos el rendimiento del servidor y corregimos errores reportados por la comunidad."
-    }
+    // Noticias
+    news1Title: "Lanzamiento Experimental 1.29",
+    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
+    news2Title: "De Sobrevivientes a Constructores",
+    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST",
+    news3Title: "Nuevo Sistema de Economía",
+    news3Desc: "Publicado por Equipo COMMAND Z | 05 Ago 2025 - 15:00 EST",
+    news4Title: "Expansión de Mapas y Eventos",
+    news4Desc: "Publicado por Equipo COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
   ru: {
-    home: "Главная",
-    vips: "VIPы",
-    news: "Новости",
-    contact: "Контакты",
+    home: "🏠 Главная",
+    news: "📰 Новости",
+    vips: "⭐ VIP",
+    youtube: "🎥 YouTube",
+    discord: "Войти в Discord",
 
-    heroTitle: "Добро пожаловать на наш сервер!",
-    discordBtn: "Войти в Discord",
+    infoTitle: "Информация о сервере",
+    rulesTitle: "Правила сервера",
+    rules: [
+      "Без читов и эксплойтов.",
+      "Уважайте всех игроков.",
+      "Запрещено убивать в безопасной зоне.",
+      "Админы имеют последнее слово."
+    ],
 
-    starter: {
-      title: "⭐ STARTER",
-      desc: "Начальный пакет с базовыми ресурсами для старта."
-    },
-    silver: {
-      title: "⭐⭐ SILVER",
-      desc: "Включает преимущества STARTER + дополнительные бонусы и больший лимит базы."
-    },
-    gold: {
-      title: "⭐⭐⭐ GOLD",
-      desc: "Все предыдущие преимущества + эксклюзивные скины и расширенная поддержка."
-    },
-    titanium: {
-      title: "🌌 TITANIUM",
-      desc: "Самый полный пакет с доступом ко всем ресурсам, бонусам и максимальной эксклюзивностью."
-    },
+    // VIPs
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Доступ к базовым наборам и приоритет в очередях.",
+    vip2Title: "⭐⭐ VIP Серебро",
+    vip2Desc: "Преимущества Starter + эксклюзивные предметы и больше построек.",
+    vip3Title: "⭐⭐⭐ VIP Золото",
+    vip3Desc: "Все предыдущие преимущества + особые скины и поддержка.",
+    vip4Title: "⭐⭐⭐⭐ VIP Титан",
+    vip4Desc: "Все преимущества + максимальные привилегии, редкие наборы и эксклюзивное обслуживание.",
 
-    news1: {
-      title: "🚀 Новое обновление",
-      desc: "Новая система еженедельных событий делает игру еще более динамичной."
-    },
-    news2: {
-      title: "🛡️ Новые предметы",
-      desc: "Добавлены легендарное оружие и редкое снаряжение в специальных ящиках."
-    },
-    news3: {
-      title: "⚙️ Улучшения и исправления",
-      desc: "Мы оптимизировали производительность сервера и исправили ошибки, сообщенные сообществом."
-    }
+    // Новости
+    news1Title: "Экспериментальный релиз 1.29",
+    news1Desc: "Опубликовал Adam Franců | 14 Авг 2025 - 09:30 EST",
+    news2Title: "От выживших к строителям",
+    news2Desc: "Опубликовал Merropa | 18 Июл 2025 - 06:15 EST",
+    news3Title: "Новая экономическая система",
+    news3Desc: "Опубликовал Команда COMMAND Z | 05 Авг 2025 - 15:00 EST",
+    news4Title: "Расширение карт и события",
+    news4Desc: "Опубликовал Команда COMMAND Z | 10 Авг 2025 - 12:45 EST"
   }
 };
 
-// =========================
-// Função única para trocar idioma
-// =========================
+// Função para trocar idioma
 function changeLanguage(lang) {
-  if (!translations[lang]) return;
+  const t = translations[lang];
+  if (!t) return;
 
-  // --- Navbar ---
-  if (document.getElementById("nav-home")) document.getElementById("nav-home").textContent = translations[lang].home;
-  if (document.getElementById("nav-vips")) document.getElementById("nav-vips").textContent = translations[lang].vips;
-  if (document.getElementById("nav-news")) document.getElementById("nav-news").textContent = translations[lang].news;
-  if (document.getElementById("nav-contact")) document.getElementById("nav-contact").textContent = translations[lang].contact;
+  // Navbar
+  document.querySelectorAll("nav a")[0].innerText = t.home;
+  if (document.querySelectorAll("nav a")[1]) document.querySelectorAll("nav a")[1].innerText = t.news;
+  if (document.querySelectorAll("nav a")[2]) document.querySelectorAll("nav a")[2].innerText = t.vips;
+  if (document.querySelectorAll("nav a")[3]) document.querySelectorAll("nav a")[3].innerText = t.youtube;
 
-  // --- Hero ---
-  if (document.getElementById("hero-title")) document.getElementById("hero-title").textContent = translations[lang].heroTitle;
-  if (document.getElementById("discord-btn")) document.getElementById("discord-btn").textContent = translations[lang].discordBtn;
+  // Botão Discord (Home)
+  if (document.querySelector(".btn")) {
+    document.querySelector(".btn").innerText = t.discord;
+  }
 
-  // --- VIPs ---
-  if (document.getElementById("vip-starter-title")) document.getElementById("vip-starter-title").textContent = translations[lang].starter.title;
-  if (document.getElementById("vip-starter-desc")) document.getElementById("vip-starter-desc").textContent = translations[lang].starter.desc;
+  // Página Home
+  if (document.getElementById("info-title")) {
+    document.getElementById("info-title").innerText = t.infoTitle;
+  }
+  if (document.getElementById("rules-title")) {
+    document.getElementById("rules-title").innerText = t.rulesTitle;
+  }
+  if (document.getElementById("rules-list")) {
+    const list = document.getElementById("rules-list");
+    list.innerHTML = "";
+    t.rules.forEach(rule => {
+      const li = document.createElement("li");
+      li.innerText = rule;
+      list.appendChild(li);
+    });
+  }
 
-  if (document.getElementById("vip-silver-title")) document.getElementById("vip-silver-title").textContent = translations[lang].silver.title;
-  if (document.getElementById("vip-silver-desc")) document.getElementById("vip-silver-desc").textContent = translations[lang].silver.desc;
+  // Página VIPs
+  if (document.getElementById("vip-starter-title")) document.getElementById("vip-starter-title").innerText = t.vip1Title;
+  if (document.getElementById("vip-starter-desc")) document.getElementById("vip-starter-desc").innerText = t.vip1Desc;
+  if (document.getElementById("vip-silver-title")) document.getElementById("vip-silver-title").innerText = t.vip2Title;
+  if (document.getElementById("vip-silver-desc")) document.getElementById("vip-silver-desc").innerText = t.vip2Desc;
+  if (document.getElementById("vip-gold-title")) document.getElementById("vip-gold-title").innerText = t.vip3Title;
+  if (document.getElementById("vip-gold-desc")) document.getElementById("vip-gold-desc").innerText = t.vip3Desc;
+  if (document.getElementById("vip-titanium-title")) document.getElementById("vip-titanium-title").innerText = t.vip4Title;
+  if (document.getElementById("vip-titanium-desc")) document.getElementById("vip-titanium-desc").innerText = t.vip4Desc;
 
-  if (document.getElementById("vip-gold-title")) document.getElementById("vip-gold-title").textContent = translations[lang].gold.title;
-  if (document.getElementById("vip-gold-desc")) document.getElementById("vip-gold-desc").textContent = translations[lang].gold.desc;
-
-  if (document.getElementById("vip-titanium-title")) document.getElementById("vip-titanium-title").textContent = translations[lang].titanium.title;
-  if (document.getElementById("vip-titanium-desc")) document.getElementById("vip-titanium-desc").textContent = translations[lang].titanium.desc;
-
-  // --- Novidades ---
-  if (document.getElementById("news-1-title")) document.getElementById("news-1-title").textContent = translations[lang].news1.title;
-  if (document.getElementById("news-1-desc")) document.getElementById("news-1-desc").textContent = translations[lang].news1.desc;
-
-  if (document.getElementById("news-2-title")) document.getElementById("news-2-title").textContent = translations[lang].news2.title;
-  if (document.getElementById("news-2-desc")) document.getElementById("news-2-desc").textContent = translations[lang].news2.desc;
-
-  if (document.getElementById("news-3-title")) document.getElementById("news-3-title").textContent = translations[lang].news3.title;
-  if (document.getElementById("news-3-desc")) document.getElementById("news-3-desc").textContent = translations[lang].news3.desc;
+  // Página Novidades
+  if (document.getElementById("news1-title")) document.getElementById("news1-title").innerText = t.news1Title;
+  if (document.getElementById("news1-desc")) document.getElementById("news1-desc").innerText = t.news1Desc;
+  if (document.getElementById("news2-title")) document.getElementById("news2-title").innerText = t.news2Title;
+  if (document.getElementById("news2-desc")) document.getElementById("news2-desc").innerText = t.news2Desc;
+  if (document.getElementById("news3-title")) document.getElementById("news3-title").innerText = t.news3Title;
+  if (document.getElementById("news3-desc")) document.getElementById("news3-desc").innerText = t.news3Desc;
+  if (document.getElementById("news4-title")) document.getElementById("news4-title").innerText = t.news4Title;
+  if (document.getElementById("news4-desc")) document.getElementById("news4-desc").innerText = t.news4Desc;
 }
