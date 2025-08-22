@@ -23,7 +23,9 @@ const translations = {
     carsTitle: "🚗 Carros",
     carsDesc: "Veículos exclusivos disponíveis na Loja Z.",
     clothesTitle: "👕 Roupas",
-    clothesDesc: "Roupas raras e skins únicas para personalizar seu personagem."
+    clothesDesc: "Roupas raras e skins únicas para personalizar seu personagem.",
+    weaponsTitle: "🔫 Armas",
+    weaponsDesc: "Armas raras e customizadas disponíveis apenas para membros VIP."
   },
   en: {
     home: "🏠 Home",
@@ -48,7 +50,9 @@ const translations = {
     carsTitle: "🚗 Cars",
     carsDesc: "Exclusive vehicles available in the Z Shop.",
     clothesTitle: "👕 Clothes",
-    clothesDesc: "Rare outfits and unique skins to customize your character."
+    clothesDesc: "Rare outfits and unique skins to customize your character.",
+    weaponsTitle: "🔫 Weapons",
+    weaponsDesc: "Rare and customized weapons available only for VIP members."
   },
   es: {
     home: "🏠 Inicio",
@@ -73,7 +77,9 @@ const translations = {
     carsTitle: "🚗 Coches",
     carsDesc: "Vehículos exclusivos disponibles en la Tienda Z.",
     clothesTitle: "👕 Ropa",
-    clothesDesc: "Ropa rara y skins únicas para personalizar tu personaje."
+    clothesDesc: "Ropa rara y skins únicas para personalizar tu personaje.",
+    weaponsTitle: "🔫 Armas",
+    weaponsDesc: "Armas raras y personalizadas disponibles solo para miembros VIP."
   },
   fr: {
     home: "🏠 Accueil",
@@ -98,7 +104,9 @@ const translations = {
     carsTitle: "🚗 Voitures",
     carsDesc: "Véhicules exclusifs disponibles dans la Boutique Z.",
     clothesTitle: "👕 Vêtements",
-    clothesDesc: "Vêtements rares et skins uniques pour personnaliser votre personnage."
+    clothesDesc: "Vêtements rares et skins uniques pour personnaliser votre personnage.",
+    weaponsTitle: "🔫 Armes",
+    weaponsDesc: "Armes rares et personnalisées disponibles uniquement pour les membres VIP."
   },
   de: {
     home: "🏠 Startseite",
@@ -123,7 +131,9 @@ const translations = {
     carsTitle: "🚗 Autos",
     carsDesc: "Exklusive Fahrzeuge im Z Shop erhältlich.",
     clothesTitle: "👕 Kleidung",
-    clothesDesc: "Seltene Kleidung und einzigartige Skins zur Personalisierung deines Charakters."
+    clothesDesc: "Seltene Kleidung und einzigartige Skins zur Personalisierung deines Charakters.",
+    weaponsTitle: "🔫 Waffen",
+    weaponsDesc: "Seltene und angepasste Waffen, nur für VIP-Mitglieder verfügbar."
   },
   it: {
     home: "🏠 Home",
@@ -148,7 +158,9 @@ const translations = {
     carsTitle: "🚗 Auto",
     carsDesc: "Veicoli esclusivi disponibili nel Negozio Z.",
     clothesTitle: "👕 Vestiti",
-    clothesDesc: "Vestiti rari e skin uniche per personalizzare il tuo personaggio."
+    clothesDesc: "Vestiti rari e skin uniche per personalizzare il tuo personaggio.",
+    weaponsTitle: "🔫 Armi",
+    weaponsDesc: "Armi rare e personalizzate disponibili solo per i membri VIP."
   },
   ru: {
     home: "🏠 Домой",
@@ -173,7 +185,9 @@ const translations = {
     carsTitle: "🚗 Машины",
     carsDesc: "Эксклюзивные автомобили доступны в Магазине Z.",
     clothesTitle: "👕 Одежда",
-    clothesDesc: "Редкая одежда и уникальные скины для персонализации персонажа."
+    clothesDesc: "Редкая одежда и уникальные скины для персонализации персонажа.",
+    weaponsTitle: "🔫 Оружие",
+    weaponsDesc: "Редкое и кастомное оружие доступно только для VIP-участников."
   }
 };
 
@@ -230,23 +244,4 @@ function setLanguage(lang) {
     document.getElementById("vip-titanium-desc").innerText = translations[lang].vipTitaniumDesc;
   }
   if (document.getElementById("cars-title")) {
-    document.getElementById("cars-title").innerText = translations[lang].carsTitle;
-    document.getElementById("cars-desc").innerText = translations[lang].carsDesc;
-  }
-  if (document.getElementById("clothes-title")) {
-    document.getElementById("clothes-title").innerText = translations[lang].clothesTitle;
-    document.getElementById("clothes-desc").innerText = translations[lang].clothesDesc;
-  }
-
-  return false;
-}
-
-// Define idioma inicial pelo navegador
-document.addEventListener("DOMContentLoaded", () => {
-  const userLang = navigator.language.substring(0, 2);
-  if (translations[userLang]) {
-    setLanguage(userLang);
-  } else {
-    setLanguage("pt");
-  }
-});
+    document.getElementById("cars-title").innerText =

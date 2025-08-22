@@ -51,7 +51,7 @@ body {
   position: absolute;
   right: 0;
   background-color: #1a1a1a;
-  min-width: 180px;
+  min-width: 200px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 8px #00000088;
@@ -69,10 +69,10 @@ body {
 }
 
 .dropdown-content a img {
-  width: 20px;
-  height: 14px;
+  width: 22px;
+  height: 16px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .dropdown-content a:hover {
@@ -167,9 +167,32 @@ main {
   padding-left: 20px;
 }
 
-/* Imagem dentro dos cards */
-.card-img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 12px;
+/* Abas Loja Z */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tablink {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.tablink:hover {
+  background: #ff4b4b;
+}
+
+.tablink.active {
+  background: #e63c3c;
+}
+
+.tabcontent {
+  display: none;
 }
