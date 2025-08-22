@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>COMMAND Z</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Z - Discord DayZ</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Lista de idiomas vertical -->
-  <div class="language-selector" role="list" aria-label="Seleção de idioma">
-    <button type="button" data-lang="pt" class="active" aria-current="true">Português</button>
-    <button type="button" data-lang="en">English</button>
-    <button type="button" data-lang="es">Español</button>
-  </div>
-
-  <div class="top-image">
-    <div class="title-container">
-      <img src="https://cdn.discordapp.com/attachments/1362997196022218782/1408122849733902426/FORFOAS.png?ex=68a89819&is=68a74699&hm=a5442031a19730d06385babb504858d6efeb92ab670fa79948ef75aa50d88662&" alt="Logo do COMMAND Z" />
-      <h1 id="title">COMMAND Z</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="novidades.html" target="_blank">📰 Novidades</a>
+      <a href="vips.html" target="_blank">⭐ VIPs</a>
+      <a href="https://www.youtube.com/@SeuCanal" target="_blank">🎥 YouTube</a>
+    </nav>
+    <div class="dropdown">
+      <button class="dropbtn">🌐 Idioma ▼</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="changeLanguage('pt')"><img src="https://flagcdn.com/w20/br.png" alt="BR" /> Português</a>
+        <a href="#" onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English</a>
+        <a href="#" onclick="changeLanguage('es')"><img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español</a>
+        <a href="#" onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w20/ru.png" alt="RU" /> Русский</a>
+      </div>
     </div>
-    <p id="subtitle">Junte-se a nós no Discord!</p>
-    <a href="https://discord.gg/rRW3hG4Kvg" target="_blank" rel="noopener noreferrer" id="discordBtn">Entrar no Discord</a>
-  </div>
+  </header>
 
-  <div class="container">
-    <div class="box">
-      <h2 id="infoTitle">Informações do Servidor</h2>
-      <ul>
-        <li><strong id="nameLabel">Nome:</strong> <span id="serverName">COMMAND Z</span></li>
-        <li><strong id="serverLabel">Servidor:</strong> <span id="serverType">Pirata/original</span></li>
-        <li><strong id="modsLabel">Mods:</strong> <span id="modsList">Trader, BaseBuildingPlus, Weapon Redux</span></li>
-        <li><strong id="wipeLabel">Wipe:</strong> <span id="wipeInfo">3 meses (todo dia 1)</span></li>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="https://cdn.discordapp.com/attachments/1362997196022218782/1408122849733902426/FORFOAS.png?ex=68a89819&is=68a74699&hm=a5442031a19730d06385babb504858d6efeb92ab670fa79948ef75aa50d88662&" alt="Logo" class="logo" />
+    <h1>COMMAND Z</h1>
+    <a href="https://discord.gg/rRW3hG4Kvg" target="_blank" class="btn">Entrar no Discord</a>
+  </section>
+
+  <!-- Conteúdo -->
+  <main>
+    <section class="card">
+      <h2 id="info-title">Informações do Servidor</h2>
+      <ul id="info-list">
+        <li><strong>Nome:</strong> COMMAND Z</li>
+        <li><strong>Servidor:</strong> Pirata/original</li>
+        <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
+        <li><strong>Wipe:</strong> 3 meses (todo dia 1)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="box">
-      <h2 id="rulesTitle">Regras do Servidor</h2>
-      <ol id="rulesList">
+    <section class="card">
+      <h2 id="rules-title">Regras do Servidor</h2>
+      <ol id="rules-list">
         <li>Sem uso de cheats ou exploits.</li>
         <li>Respeite todos os jogadores.</li>
         <li>Proibido matar em safe zone.</li>
         <li>Admins têm palavra final.</li>
       </ol>
-    </div>
-  </div>
-
-  <div class="footer" id="footerText">
-    © 2025 COMMAND Z. Todos os direitos reservados.
-  </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
