@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Command Z - Discord DayZ</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servidor - Início</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
+
+  <!-- NAVBAR -->
+  <header>
     <nav>
-      <a href="index.html">🏠 Home</a>
-      <a href="novidades.html" target="_blank">📰 Novidades</a>
-      <a href="vips.html" target="_blank">⭐ VIPs</a>
-      <a href="https://www.youtube.com/@SeuCanal" target="_blank">🎥 YouTube</a>
-    </nav>
-    <div class="dropdown">
-      <button class="dropbtn">🌐 Idioma ▼</button>
-      <div class="dropdown-content">
-        <a href="#" onclick="changeLanguage('pt')"><img src="https://flagcdn.com/w20/br.png" alt="BR" /> Português</a>
-        <a href="#" onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN" /> English</a>
-        <a href="#" onclick="changeLanguage('es')"><img src="https://flagcdn.com/w20/es.png" alt="ES" /> Español</a>
-        <a href="#" onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w20/ru.png" alt="RU" /> Русский</a>
+      <ul>
+        <li><a id="nav-home" href="index.html">Início</a></li>
+        <li><a id="nav-vips" href="vips.html">VIPs</a></li>
+        <li><a id="nav-news" href="novidades.html">Novidades</a></li>
+        <li><a id="nav-contact" href="contato.html">Contato</a></li>
+      </ul>
+
+      <!-- Botões de idioma -->
+      <div class="lang-switch">
+        <button onclick="changeLanguage('pt')">🇧🇷 PT</button>
+        <button onclick="changeLanguage('en')">🇺🇸 EN</button>
+        <button onclick="changeLanguage('es')">🇪🇸 ES</button>
+        <button onclick="changeLanguage('ru')">🇷🇺 RU</button>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <img src="https://cdn.discordapp.com/attachments/1362997196022218782/1408122849733902426/FORFOAS.png?ex=68a940d9&is=68a7ef59&hm=ec606da786e0bb3686f2fef09504af4b30c794962160803c3c2a27c277667351&" alt="Logo" class="logo" />
-    <h1>COMMAND Z</h1>
-    <a href="https://discord.gg/rRW3hG4Kvg" target="_blank" class="btn" id="discord-btn">Entrar no Discord</a>
+    <div class="hero-content">
+      <h1 id="hero-title">Bem-vindo ao nosso servidor!</h1>
+      <a id="discord-btn" class="btn" href="https://discord.gg/seuLink" target="_blank">
+        Entrar no Discord
+      </a>
+    </div>
   </section>
 
-  <!-- Conteúdo -->
-  <main>
-    <section class="card">
-      <h2 id="info-title">Informações do Servidor</h2>
-      <ul id="info-list">
-        <li><strong>Nome:</strong> COMMAND Z</li>
-        <li><strong>Servidor:</strong> Pirata/original</li>
-        <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
-        <li><strong>Wipe:</strong> 3 meses (todo dia 1)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2 id="rules-title">Regras do Servidor</h2>
-      <ol id="rules-list">
-        <li>Sem uso de cheats ou exploits.</li>
-        <li>Respeite todos os jogadores.</li>
-        <li>Proibido matar em safe zone.</li>
-        <li>Admins têm palavra final.</li>
-      </ol>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
