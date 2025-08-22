@@ -1,13 +1,13 @@
 // Traduções centralizadas
 const translations = {
+  // 🇧🇷 Português
   pt: {
     home: "🏠 Home",
     news: "📰 Novidades",
-    vips: "⭐ VIPs",
+    store: "🛒 Loja Z",
     youtube: "🎥 YouTube",
     discord: "Entrar no Discord",
 
-    // Home
     infoTitle: "Informações do Servidor",
     rulesTitle: "Regras do Servidor",
     rules: [
@@ -17,7 +17,12 @@ const translations = {
       "Admins têm palavra final."
     ],
 
-    // VIPs
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Armas",
+    tabRoupas: "👕 Roupas",
+    tabCarros: "🚗 Carros",
+    tabHelis: "🚁 Helicópteros",
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Acesso a kits básicos e prioridade em filas do servidor.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -27,7 +32,18 @@ const translations = {
     vip4Title: "⭐⭐⭐⭐ VIP Titanium",
     vip4Desc: "Todos os benefícios anteriores + privilégios máximos, kits raros e atendimento exclusivo.",
 
-    // Novidades
+    arma1Title: "Rifle de Assalto",
+    arma1Desc: "Poder de fogo elevado, ideal para combates de média distância.",
+
+    roupa1Title: "Conjunto Militar",
+    roupa1Desc: "Equipamento resistente para enfrentar qualquer situação.",
+
+    carro1Title: "Jeep Blindado",
+    carro1Desc: "Alta durabilidade e espaço para transporte em equipe.",
+
+    heli1Title: "Helicóptero de Ataque",
+    heli1Desc: "Velocidade aérea com capacidade de suporte ofensivo.",
+
     news1Title: "1.29 Experimental Release",
     news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
     news2Title: "De Sobreviventes a Construtores",
@@ -38,10 +54,11 @@ const translations = {
     news4Desc: "Publicado por Equipe COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
+  // 🇺🇸 Inglês
   en: {
     home: "🏠 Home",
     news: "📰 News",
-    vips: "⭐ VIPs",
+    store: "🛒 Store Z",
     youtube: "🎥 YouTube",
     discord: "Join Discord",
 
@@ -54,7 +71,12 @@ const translations = {
       "Admins have the final word."
     ],
 
-    // VIPs
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Weapons",
+    tabRoupas: "👕 Clothes",
+    tabCarros: "🚗 Cars",
+    tabHelis: "🚁 Helicopters",
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Access to basic kits and queue priority.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -64,7 +86,18 @@ const translations = {
     vip4Title: "⭐⭐⭐⭐ VIP Titanium",
     vip4Desc: "All previous benefits + maximum privileges, rare kits and exclusive service.",
 
-    // News
+    arma1Title: "Assault Rifle",
+    arma1Desc: "High firepower, ideal for mid-range combat.",
+
+    roupa1Title: "Military Outfit",
+    roupa1Desc: "Durable equipment for any situation.",
+
+    carro1Title: "Armored Jeep",
+    carro1Desc: "High durability and space for team transport.",
+
+    heli1Title: "Attack Helicopter",
+    heli1Desc: "Air speed with offensive support capability.",
+
     news1Title: "1.29 Experimental Release",
     news1Desc: "Published by Adam Franců | Aug 14, 2025 - 09:30 EST",
     news2Title: "From Survivors to Builders",
@@ -75,10 +108,11 @@ const translations = {
     news4Desc: "Published by COMMAND Z Team | Aug 10, 2025 - 12:45 EST"
   },
 
+  // 🇪🇸 Espanhol
   es: {
     home: "🏠 Inicio",
     news: "📰 Noticias",
-    vips: "⭐ VIPs",
+    store: "🛒 Tienda Z",
     youtube: "🎥 YouTube",
     discord: "Unirse al Discord",
 
@@ -91,7 +125,12 @@ const translations = {
       "Los administradores tienen la última palabra."
     ],
 
-    // VIPs
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Armas",
+    tabRoupas: "👕 Ropa",
+    tabCarros: "🚗 Coches",
+    tabHelis: "🚁 Helicópteros",
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Acceso a kits básicos y prioridad en colas.",
     vip2Title: "⭐⭐ VIP Plata",
@@ -101,7 +140,18 @@ const translations = {
     vip4Title: "⭐⭐⭐⭐ VIP Titanio",
     vip4Desc: "Todos los beneficios anteriores + privilegios máximos, kits raros y atención exclusiva.",
 
-    // Noticias
+    arma1Title: "Rifle de Asalto",
+    arma1Desc: "Gran poder de fuego, ideal para combate a media distancia.",
+
+    roupa1Title: "Conjunto Militar",
+    roupa1Desc: "Equipo resistente para cualquier situación.",
+
+    carro1Title: "Jeep Blindado",
+    carro1Desc: "Alta durabilidad y espacio para transporte en equipo.",
+
+    heli1Title: "Helicóptero de Ataque",
+    heli1Desc: "Velocidad aérea con capacidad de apoyo ofensivo.",
+
     news1Title: "Lanzamiento Experimental 1.29",
     news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
     news2Title: "De Sobrevivientes a Constructores",
@@ -112,10 +162,11 @@ const translations = {
     news4Desc: "Publicado por Equipo COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
+  // 🇷🇺 Russo
   ru: {
     home: "🏠 Главная",
     news: "📰 Новости",
-    vips: "⭐ VIP",
+    store: "🛒 Магазин Z",
     youtube: "🎥 YouTube",
     discord: "Войти в Discord",
 
@@ -128,7 +179,12 @@ const translations = {
       "Админы имеют последнее слово."
     ],
 
-    // VIPs
+    tabVips: "⭐ VIP",
+    tabArmas: "🔫 Оружие",
+    tabRoupas: "👕 Одежда",
+    tabCarros: "🚗 Машины",
+    tabHelis: "🚁 Вертолеты",
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Доступ к базовым наборам и приоритет в очередях.",
     vip2Title: "⭐⭐ VIP Серебро",
@@ -138,7 +194,18 @@ const translations = {
     vip4Title: "⭐⭐⭐⭐ VIP Титан",
     vip4Desc: "Все преимущества + максимальные привилегии, редкие наборы и эксклюзивное обслуживание.",
 
-    // Новости
+    arma1Title: "Автомат",
+    arma1Desc: "Высокая огневая мощь, идеально для среднего боя.",
+
+    roupa1Title: "Военная форма",
+    roupa1Desc: "Прочное снаряжение для любых ситуаций.",
+
+    carro1Title: "Бронированный джип",
+    carro1Desc: "Высокая прочность и место для команды.",
+
+    heli1Title: "Боевой вертолет",
+    heli1Desc: "Скорость и поддержка с воздуха.",
+
     news1Title: "Экспериментальный релиз 1.29",
     news1Desc: "Опубликовал Adam Franců | 14 Авг 2025 - 09:30 EST",
     news2Title: "От выживших к строителям",
@@ -147,71 +214,163 @@ const translations = {
     news3Desc: "Опубликовал Команда COMMAND Z | 05 Авг 2025 - 15:00 EST",
     news4Title: "Расширение карт и события",
     news4Desc: "Опубликовал Команда COMMAND Z | 10 Авг 2025 - 12:45 EST"
-  }
-};
+  },
 
-// Função para trocar idioma
-function changeLanguage(lang) {
-  const t = translations[lang];
-  if (!t) return;
+  // 🇫🇷 Francês
+  fr: {
+    home: "🏠 Accueil",
+    news: "📰 Nouveautés",
+    store: "🛒 Boutique Z",
+    youtube: "🎥 YouTube",
+    discord: "Rejoindre Discord",
 
-  // Navbar
-  document.querySelectorAll("nav a")[0].innerText = t.home;
-  if (document.querySelectorAll("nav a")[1]) document.querySelectorAll("nav a")[1].innerText = t.news;
-  if (document.querySelectorAll("nav a")[2]) document.querySelectorAll("nav a")[2].innerText = t.vips;
-  if (document.querySelectorAll("nav a")[3]) document.querySelectorAll("nav a")[3].innerText = t.youtube;
+    infoTitle: "Informations du Serveur",
+    rulesTitle: "Règles du Serveur",
+    rules: [
+      "Pas de triche ni d'exploits.",
+      "Respectez tous les joueurs.",
+      "Interdit de tuer dans la zone sécurisée.",
+      "Les admins ont le dernier mot."
+    ],
 
-  // Botão Discord (Home)
-  if (document.querySelector(".btn")) {
-    document.querySelector(".btn").innerText = t.discord;
-  }
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Armes",
+    tabRoupas: "👕 Vêtements",
+    tabCarros: "🚗 Voitures",
+    tabHelis: "🚁 Hélicoptères",
 
-  // Página Home
-  if (document.getElementById("info-title")) {
-    document.getElementById("info-title").innerText = t.infoTitle;
-  }
-  if (document.getElementById("rules-title")) {
-    document.getElementById("rules-title").innerText = t.rulesTitle;
-  }
-  if (document.getElementById("rules-list")) {
-    const list = document.getElementById("rules-list");
-    list.innerHTML = "";
-    t.rules.forEach(rule => {
-      const li = document.createElement("li");
-      li.innerText = rule;
-      list.appendChild(li);
-    });
-  }
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Accès à des kits basiques et priorité dans les files d’attente.",
+    vip2Title: "⭐⭐ VIP Argent",
+    vip2Desc: "Avantages du Starter + objets exclusifs et limite de base plus élevée.",
+    vip3Title: "⭐⭐⭐ VIP Or",
+    vip3Desc: "Tous les avantages précédents + skins spéciaux et support dédié.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanium",
+    vip4Desc: "Tous les avantages + privilèges maximum, kits rares et service exclusif.",
 
-  // Página VIPs
-  if (document.getElementById("vip-starter-title")) document.getElementById("vip-starter-title").innerText = t.vip1Title;
-  if (document.getElementById("vip-starter-desc")) document.getElementById("vip-starter-desc").innerText = t.vip1Desc;
-  if (document.getElementById("vip-silver-title")) document.getElementById("vip-silver-title").innerText = t.vip2Title;
-  if (document.getElementById("vip-silver-desc")) document.getElementById("vip-silver-desc").innerText = t.vip2Desc;
-  if (document.getElementById("vip-gold-title")) document.getElementById("vip-gold-title").innerText = t.vip3Title;
-  if (document.getElementById("vip-gold-desc")) document.getElementById("vip-gold-desc").innerText = t.vip3Desc;
-  if (document.getElementById("vip-titanium-title")) document.getElementById("vip-titanium-title").innerText = t.vip4Title;
-  if (document.getElementById("vip-titanium-desc")) document.getElementById("vip-titanium-desc").innerText = t.vip4Desc;
+    arma1Title: "Fusil d'Assaut",
+    arma1Desc: "Grande puissance de feu, idéal pour le combat à moyenne distance.",
 
-  // Página Novidades
-  if (document.getElementById("news1-title")) document.getElementById("news1-title").innerText = t.news1Title;
-  if (document.getElementById("news1-desc")) document.getElementById("news1-desc").innerText = t.news1Desc;
-  if (document.getElementById("news2-title")) document.getElementById("news2-title").innerText = t.news2Title;
-  if (document.getElementById("news2-desc")) document.getElementById("news2-desc").innerText = t.news2Desc;
-  if (document.getElementById("news3-title")) document.getElementById("news3-title").innerText = t.news3Title;
-  if (document.getElementById("news3-desc")) document.getElementById("news3-desc").innerText = t.news3Desc;
-  if (document.getElementById("news4-title")) document.getElementById("news4-title").innerText = t.news4Title;
-  if (document.getElementById("news4-desc")) document.getElementById("news4-desc").innerText = t.news4Desc;
-}
+    roupa1Title: "Tenue Militaire",
+    roupa1Desc: "Équipement résistant pour toute situation.",
 
-// Auto detecção do idioma do navegador
-window.onload = function () {
-  let userLang = navigator.language || navigator.userLanguage;
-  userLang = userLang.substring(0, 2); // só os 2 primeiros caracteres (pt, en, es, ru)
+    carro1Title: "Jeep Blindée",
+    carro1Desc: "Haute durabilité et espace pour l’équipe.",
 
-  if (["pt", "en", "es", "ru"].includes(userLang)) {
-    changeLanguage(userLang);
-  } else {
-    changeLanguage("pt"); // fallback
-  }
-};
+    heli1Title: "Hélicoptère d’Attaque",
+    heli1Desc: "Vitesse aérienne avec capacité offensive.",
+
+    news1Title: "Sortie Expérimentale 1.29",
+    news1Desc: "Publié par Adam Franců | 14 Août 2025 - 09:30 EST",
+    news2Title: "Des Survivants aux Bâtisseurs",
+    news2Desc: "Publié par Merropa | 18 Juil 2025 - 06:15 EST",
+    news3Title: "Nouveau Système Économique",
+    news3Desc: "Publié par l’équipe COMMAND Z | 05 Août 2025 - 15:00 EST",
+    news4Title: "Extension des Cartes et Événements",
+    news4Desc: "Publié par l’équipe COMMAND Z | 10 Août 2025 - 12:45 EST"
+  },
+
+  // 🇩🇪 Alemão
+  de: {
+    home: "🏠 Startseite",
+    news: "📰 Neuigkeiten",
+    store: "🛒 Shop Z",
+    youtube: "🎥 YouTube",
+    discord: "Discord beitreten",
+
+    infoTitle: "Serverinformationen",
+    rulesTitle: "Serverregeln",
+    rules: [
+      "Keine Cheats oder Exploits.",
+      "Respektiere alle Spieler.",
+      "Töten in der sicheren Zone verboten.",
+      "Admins haben das letzte Wort."
+    ],
+
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Waffen",
+    tabRoupas: "👕 Kleidung",
+    tabCarros: "🚗 Autos",
+    tabHelis: "🚁 Hubschrauber",
+
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Zugang zu Basis-Kits und Priorität in Warteschlangen.",
+    vip2Title: "⭐⭐ VIP Silber",
+    vip2Desc: "Starter-Vorteile + exklusive Items und höheres Basislimit.",
+    vip3Title: "⭐⭐⭐ VIP Gold",
+    vip3Desc: "Alle vorherigen Vorteile + spezielle Skins und Support.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanium",
+    vip4Desc: "Alle Vorteile + maximale Privilegien, seltene Kits und exklusiver Service.",
+
+    arma1Title: "Sturmgewehr",
+    arma1Desc: "Hohe Feuerkraft, ideal für mittlere Distanz.",
+
+    roupa1Title: "Militärausrüstung",
+    roupa1Desc: "Robuste Ausrüstung für jede Situation.",
+
+    carro1Title: "Gepanzerter Jeep",
+    carro1Desc: "Hohe Haltbarkeit und Platz für das Team.",
+
+    heli1Title: "Kampfhubschrauber",
+    heli1Desc: "Luftgeschwindigkeit mit offensiver Unterstützung.",
+
+    news1Title: "1.29 Experimentelles Update",
+    news1Desc: "Veröffentlicht von Adam Franců | 14. Aug 2025 - 09:30 EST",
+    news2Title: "Von Überlebenden zu Bauherren",
+    news2Desc: "Veröffentlicht von Merropa | 18. Jul 2025 - 06:15 EST",
+    news3Title: "Neues Wirtschaftssystem",
+    news3Desc: "Veröffentlicht von COMMAND Z Team | 05. Aug 2025 - 15:00 EST",
+    news4Title: "Kartenerweiterung und Events",
+    news4Desc: "Veröffentlicht von COMMAND Z Team | 10. Aug 2025 - 12:45 EST"
+  },
+
+  // 🇮🇹 Italiano
+  it: {
+    home: "🏠 Home",
+    news: "📰 Novità",
+    store: "🛒 Negozio Z",
+    youtube: "🎥 YouTube",
+    discord: "Entra nel Discord",
+
+    infoTitle: "Informazioni del Server",
+    rulesTitle: "Regole del Server",
+    rules: [
+      "Niente cheat o exploit.",
+      "Rispetta tutti i giocatori.",
+      "Vietato uccidere nella zona sicura.",
+      "Gli admin hanno l’ultima parola."
+    ],
+
+    tabVips: "⭐ VIPs",
+    tabArmas: "🔫 Armi",
+    tabRoupas: "👕 Vestiti",
+    tabCarros: "🚗 Auto",
+    tabHelis: "🚁 Elicotteri",
+
+    vip1Title: "⭐ VIP Starter",
+    vip1Desc: "Accesso a kit di base e priorità nelle code.",
+    vip2Title: "⭐⭐ VIP Argento",
+    vip2Desc: "Benefici di Starter + oggetti esclusivi e limite base maggiore.",
+    vip3Title: "⭐⭐⭐ VIP Oro",
+    vip3Desc: "Tutti i benefici precedenti + skin speciali e supporto dedicato.",
+    vip4Title: "⭐⭐⭐⭐ VIP Titanium",
+    vip4Desc: "Tutti i benefici + privilegi massimi, kit rari e servizio esclusivo.",
+
+    arma1Title: "Fucile d’Assalto",
+    arma1Desc: "Grande potenza di fuoco, ideale per combattimenti a media distanza.",
+
+    roupa1Title: "Divisa Militare",
+    roupa1Desc: "Equipaggiamento resistente per ogni situazione.",
+
+    carro1Title: "Jeep Blindata",
+    carro1Desc: "Alta durabilità e spazio per il team.",
+
+    heli1Title: "Elicottero d’Attacco",
+    heli1Desc: "Velocità aerea con capacità offensiva.",
+
+    news1Title: "Rilascio Sperimentale 1.29",
+    news1Desc: "Pubblicato da Adam Franců | 14 Ago 2025 - 09:30 EST",
+    news2Title: "Da Sopravvissuti a Costruttori",
+    news2Desc: "Pubblicato da Merropa | 18 Lug 2025 - 06:15 EST",
+    news3Title: "Nuovo Sistema Economico",
+    news3Desc: "Pubblicato dal Team COMMAND Z | 05 Ago 2025 - 15
