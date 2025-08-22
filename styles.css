@@ -102,8 +102,12 @@ body {
   background: #e63c3c;
 }
 
+/* Logo redondo */
 .logo {
-  width: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;   /* deixa redondo */
+  object-fit: cover;    /* garante que não distorça */
   margin-bottom: 15px;
 }
 
