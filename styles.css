@@ -28,7 +28,8 @@ body {
   transition: color 0.3s;
 }
 
-.navbar nav a:hover {
+.navbar nav a:hover,
+.navbar nav a.active {
   color: #ff4b4b;
 }
 
@@ -159,4 +160,42 @@ main {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 12px;
+}
+
+/* ========================== */
+/*      LOJAZ - Abas          */
+/* ========================== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  padding: 10px;
+  border-bottom: 2px solid #222;
+  gap: 30px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 8px 12px;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  color: #ff4b4b;
+  border-bottom: 2px solid #ff4b4b;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: grid;
+  gap: 20px;
 }
