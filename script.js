@@ -203,3 +203,15 @@ function changeLanguage(lang) {
   if (document.getElementById("news4-title")) document.getElementById("news4-title").innerText = t.news4Title;
   if (document.getElementById("news4-desc")) document.getElementById("news4-desc").innerText = t.news4Desc;
 }
+
+// Auto detecção do idioma do navegador
+window.onload = function () {
+  let userLang = navigator.language || navigator.userLanguage;
+  userLang = userLang.substring(0, 2); // só os 2 primeiros caracteres (pt, en, es, ru)
+
+  if (["pt", "en", "es", "ru"].includes(userLang)) {
+    changeLanguage(userLang);
+  } else {
+    changeLanguage("pt"); // fallback
+  }
+};
