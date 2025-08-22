@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lojaz - COMMAND Z</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="novidades.html">📰 Novidades</a>
+      <a href="lojaz.html" class="active">🛒 Lojaz</a>
+      <a href="https://www.youtube.com/@SeuCanal" target="_blank">🎥 YouTube</a>
+    </nav>
+    <div class="dropdown">
+      <button class="dropbtn">🌐 Idioma ▼</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="changeLanguage('pt')"><img src="https://flagcdn.com/w20/br.png" alt="BR"/> Português</a>
+        <a href="#" onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN"/> English</a>
+        <a href="#" onclick="changeLanguage('es')"><img src="https://flagcdn.com/w20/es.png" alt="ES"/> Español</a>
+        <a href="#" onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w20/ru.png" alt="RU"/> Русский</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Abas fixas -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="carros">🚗 Carros</button>
+    <button class="tab-btn" data-tab="armas">🔫 Armas</button>
+    <button class="tab-btn" data-tab="roupas">👕 Roupas</button>
+    <button class="tab-btn" data-tab="vips">⭐ VIPs</button>
+  </div>
+
+  <!-- Conteúdo -->
+  <main>
+    <!-- Carros -->
+    <div id="carros" class="tab-content active">
+      <section class="card">
+        <img src="carro1.jpg" alt="Carro Esportivo" class="card-img"/>
+        <h2>Carro Esportivo</h2>
+        <p>Velocidade máxima e alto desempenho para dominar as estradas.</p>
+      </section>
+      <section class="card">
+        <img src="carro2.jpg" alt="SUV Blindado" class="card-img"/>
+        <h2>SUV Blindado</h2>
+        <p>Proteção reforçada e capacidade para toda a equipe.</p>
+      </section>
+    </div>
+
+    <!-- Armas -->
+    <div id="armas" class="tab-content">
+      <section class="card">
+        <img src="arma1.jpg" alt="Rifle de Assalto" class="card-img"/>
+        <h2>Rifle de Assalto</h2>
+        <p>Ideal para combates intensos de média distância.</p>
+      </section>
+      <section class="card">
+        <img src="arma2.jpg" alt="Sniper" class="card-img"/>
+        <h2>Sniper</h2>
+        <p>Precisão absoluta para eliminar alvos à longa distância.</p>
+      </section>
+    </div>
+
+    <!-- Roupas -->
+    <div id="roupas" class="tab-content">
+      <section class="card">
+        <img src="roupa1.jpg" alt="Uniforme Militar" class="card-img"/>
+        <h2>Uniforme Militar</h2>
+        <p>Camuflagem perfeita para ambientes de combate.</p>
+      </section>
+      <section class="card">
+        <img src="roupa2.jpg" alt="Traje Tático" class="card-img"/>
+        <h2>Traje Tático</h2>
+        <p>Resistência e estilo para os sobreviventes mais preparados.</p>
+      </section>
+    </div>
+
+    <!-- VIPs -->
+    <div id="vips" class="tab-content">
+      <section class="card">
+        <img src="vip-starter.jpg" alt="VIP Starter" class="card-img"/>
+        <h2 id="vip-starter-title">⭐ VIP Starter</h2>
+        <p id="vip-starter-desc">Acesso a kits básicos e prioridade em filas do servidor.</p>
+      </section>
+      <section class="card">
+        <img src="vip-silver.jpg" alt="VIP Silver" class="card-img"/>
+        <h2 id="vip-silver-title">⭐⭐ VIP Silver</h2>
+        <p id="vip-silver-desc">Benefícios do Starter + itens exclusivos e maior limite de base.</p>
+      </section>
+      <section class="card">
+        <img src="vip-gold.jpg" alt="VIP Gold" class="card-img"/>
+        <h2 id="vip-gold-title">⭐⭐⭐ VIP Gold</h2>
+        <p id="vip-gold-desc">Todos os benefícios anteriores + skins especiais e suporte dedicado.</p>
+      </section>
+      <section class="card">
+        <img src="vip-titanium.jpg" alt="VIP Titanium" class="card-img"/>
+        <h2 id="vip-titanium-title">⭐⭐⭐⭐ VIP Titanium</h2>
+        <p id="vip-titanium-desc">Todos os benefícios anteriores + privilégios máximos, kits raros e atendimento exclusivo.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Lógica das abas
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
