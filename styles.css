@@ -51,11 +51,10 @@ body {
   position: absolute;
   right: 0;
   background-color: #1a1a1a;
-  min-width: 180px;
+  min-width: 160px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px #000a;
-  z-index: 10;
+  z-index: 1;
 }
 
 .dropdown-content a {
@@ -65,7 +64,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
 }
 
 .dropdown-content a:hover {
@@ -74,12 +72,6 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.flag {
-  font-size: 16px;
-  width: 22px;
-  text-align: center;
 }
 
 /* Hero */
@@ -114,79 +106,57 @@ body {
 .logo {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%;   /* deixa redondo */
+  object-fit: cover;    /* garante que não distorça */
   margin-bottom: 15px;
 }
 
 /* Conteúdo principal */
 main {
   padding: 40px 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   display: grid;
   gap: 20px;
 }
 
 /* Cards */
-.card, .vip-card {
+.card {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 8px #0008;
+  box-shadow: 0 0 8px #00000088;
   transition: transform 0.2s ease;
 }
 
-.card:hover, .vip-card:hover {
+.card:hover {
   transform: scale(1.01);
 }
 
-.card h2, .vip-card h2 {
+.card h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #333;
   padding-bottom: 5px;
-  color: #fff;
 }
 
-.card p, .vip-card p,
-.card ul, .card ol {
+.card p,
+.card ul,
+.card ol {
   margin-top: 10px;
   font-size: 1rem;
   color: #ddd;
   line-height: 1.6;
 }
 
-.card ul, .card ol {
+.card ul,
+.card ol {
   padding-left: 20px;
 }
 
-/* Abas Loja Z */
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.tablink {
-  background: #1a1a1a;
-  color: #fff;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.tablink:hover {
-  background: #ff4b4b;
-}
-
-.tablink.active {
-  background: #e63c3c;
-}
-
-.tabcontent {
-  display: none;
+/* Imagem dentro dos cards */
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
