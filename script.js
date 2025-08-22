@@ -3,7 +3,7 @@ const translations = {
   pt: {
     home: "🏠 Home",
     news: "📰 Novidades",
-    vips: "⭐ VIPs",
+    lojaz: "🛒 Lojaz",
     youtube: "🎥 YouTube",
     discord: "Entrar no Discord",
 
@@ -17,7 +17,7 @@ const translations = {
       "Admins têm palavra final."
     ],
 
-    // VIPs
+    // Loja (aba VIPs dentro da lojaz)
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Acesso a kits básicos e prioridade em filas do servidor.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -41,20 +41,11 @@ const translations = {
   en: {
     home: "🏠 Home",
     news: "📰 News",
-    vips: "⭐ VIPs",
+    lojaz: "🛒 Store",
     youtube: "🎥 YouTube",
     discord: "Join Discord",
 
-    infoTitle: "Server Information",
-    rulesTitle: "Server Rules",
-    rules: [
-      "No cheats or exploits.",
-      "Respect all players.",
-      "No killing in safe zone.",
-      "Admins have the final word."
-    ],
-
-    // VIPs
+    // VIPs (content inside Lojaz)
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Access to basic kits and queue priority.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -78,18 +69,9 @@ const translations = {
   es: {
     home: "🏠 Inicio",
     news: "📰 Noticias",
-    vips: "⭐ VIPs",
+    lojaz: "🛒 Tienda",
     youtube: "🎥 YouTube",
     discord: "Unirse al Discord",
-
-    infoTitle: "Información del Servidor",
-    rulesTitle: "Reglas del Servidor",
-    rules: [
-      "Sin trampas ni exploits.",
-      "Respeta a todos los jugadores.",
-      "Prohibido matar en la zona segura.",
-      "Los administradores tienen la última palabra."
-    ],
 
     // VIPs
     vip1Title: "⭐ VIP Starter",
@@ -115,18 +97,9 @@ const translations = {
   ru: {
     home: "🏠 Главная",
     news: "📰 Новости",
-    vips: "⭐ VIP",
+    lojaz: "🛒 Магазин",
     youtube: "🎥 YouTube",
     discord: "Войти в Discord",
-
-    infoTitle: "Информация о сервере",
-    rulesTitle: "Правила сервера",
-    rules: [
-      "Без читов и эксплойтов.",
-      "Уважайте всех игроков.",
-      "Запрещено убивать в безопасной зоне.",
-      "Админы имеют последнее слово."
-    ],
 
     // VIPs
     vip1Title: "⭐ VIP Starter",
@@ -157,9 +130,9 @@ function changeLanguage(lang) {
 
   // Navbar
   document.querySelectorAll("nav a")[0].innerText = t.home;
-  if (document.querySelectorAll("nav a")[1]) document.querySelectorAll("nav a")[1].innerText = t.news;
-  if (document.querySelectorAll("nav a")[2]) document.querySelectorAll("nav a")[2].innerText = t.vips;
-  if (document.querySelectorAll("nav a")[3]) document.querySelectorAll("nav a")[3].innerText = t.youtube;
+  document.querySelectorAll("nav a")[1].innerText = t.news;
+  document.querySelectorAll("nav a")[2].innerText = t.lojaz; // <-- agora traduz "Lojaz"
+  document.querySelectorAll("nav a")[3].innerText = t.youtube;
 
   // Botão Discord (Home)
   if (document.querySelector(".btn")) {
@@ -183,7 +156,7 @@ function changeLanguage(lang) {
     });
   }
 
-  // Página VIPs
+  // VIPs dentro da aba LojaZ
   if (document.getElementById("vip-starter-title")) document.getElementById("vip-starter-title").innerText = t.vip1Title;
   if (document.getElementById("vip-starter-desc")) document.getElementById("vip-starter-desc").innerText = t.vip1Desc;
   if (document.getElementById("vip-silver-title")) document.getElementById("vip-silver-title").innerText = t.vip2Title;
@@ -193,7 +166,7 @@ function changeLanguage(lang) {
   if (document.getElementById("vip-titanium-title")) document.getElementById("vip-titanium-title").innerText = t.vip4Title;
   if (document.getElementById("vip-titanium-desc")) document.getElementById("vip-titanium-desc").innerText = t.vip4Desc;
 
-  // Página Novidades
+  // Novidades
   if (document.getElementById("news1-title")) document.getElementById("news1-title").innerText = t.news1Title;
   if (document.getElementById("news1-desc")) document.getElementById("news1-desc").innerText = t.news1Desc;
   if (document.getElementById("news2-title")) document.getElementById("news2-title").innerText = t.news2Title;
@@ -207,11 +180,11 @@ function changeLanguage(lang) {
 // Auto detecção do idioma do navegador
 window.onload = function () {
   let userLang = navigator.language || navigator.userLanguage;
-  userLang = userLang.substring(0, 2); // só os 2 primeiros caracteres (pt, en, es, ru)
+  userLang = userLang.substring(0, 2);
 
   if (["pt", "en", "es", "ru"].includes(userLang)) {
     changeLanguage(userLang);
   } else {
-    changeLanguage("pt"); // fallback
+    changeLanguage("pt");
   }
 };
