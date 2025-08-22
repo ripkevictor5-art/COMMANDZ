@@ -1,74 +1,169 @@
-function changeLanguage(lang) {
-  const infoTitle = document.getElementById("info-title");
-  const infoList = document.getElementById("info-list");
-  const rulesTitle = document.getElementById("rules-title");
-  const rulesList = document.getElementById("rules-list");
+// Traduções centralizadas
+const translations = {
+  pt: {
+    home: "🏠 Home",
+    news: "📰 Novidades",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Entrar no Discord",
 
-  if (!infoTitle || !infoList || !rulesTitle || !rulesList) return;
+    // Home
+    infoTitle: "Informações do Servidor",
+    rulesTitle: "Regras do Servidor",
+    rules: [
+      "Sem uso de cheats ou exploits.",
+      "Respeite todos os jogadores.",
+      "Proibido matar em safe zone.",
+      "Admins têm palavra final."
+    ],
 
-  if (lang === "pt") {
-    infoTitle.innerText = "Informações do Servidor";
-    infoList.innerHTML = `
-      <li><strong>Nome:</strong> COMMAND Z</li>
-      <li><strong>Servidor:</strong> Pirata/original</li>
-      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
-      <li><strong>Wipe:</strong> 3 meses (todo dia 1)</li>
-    `;
+    // VIPs
+    vip1Title: "⭐ VIP Bronze",
+    vip1Desc: "Acesso a kits básicos e prioridade em filas do servidor.",
+    vip2Title: "⭐⭐ VIP Prata",
+    vip2Desc: "Benefícios do Bronze + itens exclusivos e maior limite de base.",
+    vip3Title: "⭐⭐⭐ VIP Ouro",
+    vip3Desc: "Todos os benefícios anteriores + skins especiais e suporte dedicado.",
 
-    rulesTitle.innerText = "Regras do Servidor";
-    rulesList.innerHTML = `
-      <li>Sem uso de cheats ou exploits.</li>
-      <li>Respeite todos os jogadores.</li>
-      <li>Proibido matar em safe zone.</li>
-      <li>Admins têm palavra final.</li>
-    `;
-  } else if (lang === "en") {
-    infoTitle.innerText = "Server Information";
-    infoList.innerHTML = `
-      <li><strong>Name:</strong> COMMAND Z</li>
-      <li><strong>Server:</strong> Cracked/original</li>
-      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
-      <li><strong>Wipe:</strong> Every 3 months (1st of the month)</li>
-    `;
+    // Novidades
+    news1Title: "1.29 Experimental Release",
+    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
+    news2Title: "De Sobreviventes a Construtores",
+    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST"
+  },
 
-    rulesTitle.innerText = "Server Rules";
-    rulesList.innerHTML = `
-      <li>No use of cheats or exploits.</li>
-      <li>Respect all players.</li>
-      <li>No killing in safe zones.</li>
-      <li>Admins have the final word.</li>
-    `;
-  } else if (lang === "es") {
-    infoTitle.innerText = "Información del Servidor";
-    infoList.innerHTML = `
-      <li><strong>Nombre:</strong> COMMAND Z</li>
-      <li><strong>Servidor:</strong> Pirata/original</li>
-      <li><strong>Mods:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
-      <li><strong>Wipe:</strong> Cada 3 meses (día 1)</li>
-    `;
+  en: {
+    home: "🏠 Home",
+    news: "📰 News",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Join Discord",
 
-    rulesTitle.innerText = "Reglas del Servidor";
-    rulesList.innerHTML = `
-      <li>No usar trampas ni exploits.</li>
-      <li>Respeta a todos los jugadores.</li>
-      <li>Prohibido matar en zona segura.</li>
-      <li>Los admins tienen la última palabra.</li>
-    `;
-  } else if (lang === "ru") {
-    infoTitle.innerText = "Информация о сервере";
-    infoList.innerHTML = `
-      <li><strong>Имя:</strong> COMMAND Z</li>
-      <li><strong>Сервер:</strong> Пиратка/оригинал</li>
-      <li><strong>Моды:</strong> Trader, BaseBuildingPlus, Weapon Redux</li>
-      <li><strong>Сброс:</strong> Каждые 3 месяца (1 числа)</li>
-    `;
+    infoTitle: "Server Information",
+    rulesTitle: "Server Rules",
+    rules: [
+      "No cheats or exploits.",
+      "Respect all players.",
+      "No killing in safe zone.",
+      "Admins have the final word."
+    ],
 
-    rulesTitle.innerText = "Правила сервера";
-    rulesList.innerHTML = `
-      <li>Без использования читов и эксплойтов.</li>
-      <li>Уважайте всех игроков.</li>
-      <li>Запрещено убивать в безопасной зоне.</li>
-      <li>Решение админов является окончательным.</li>
-    `;
+    vip1Title: "⭐ VIP Bronze",
+    vip1Desc: "Access to basic kits and queue priority.",
+    vip2Title: "⭐⭐ VIP Silver",
+    vip2Desc: "Bronze benefits + exclusive items and higher base limit.",
+    vip3Title: "⭐⭐⭐ VIP Gold",
+    vip3Desc: "All previous benefits + special skins and dedicated support.",
+
+    news1Title: "1.29 Experimental Release",
+    news1Desc: "Published by Adam Franců | Aug 14, 2025 - 09:30 EST",
+    news2Title: "From Survivors to Builders",
+    news2Desc: "Published by Merropa | Jul 18, 2025 - 06:15 EST"
+  },
+
+  es: {
+    home: "🏠 Inicio",
+    news: "📰 Noticias",
+    vips: "⭐ VIPs",
+    youtube: "🎥 YouTube",
+    discord: "Unirse al Discord",
+
+    infoTitle: "Información del Servidor",
+    rulesTitle: "Reglas del Servidor",
+    rules: [
+      "Sin trampas ni exploits.",
+      "Respeta a todos los jugadores.",
+      "Prohibido matar en la zona segura.",
+      "Los administradores tienen la última palabra."
+    ],
+
+    vip1Title: "⭐ VIP Bronce",
+    vip1Desc: "Acceso a kits básicos y prioridad en colas.",
+    vip2Title: "⭐⭐ VIP Plata",
+    vip2Desc: "Beneficios del Bronce + objetos exclusivos y mayor límite de base.",
+    vip3Title: "⭐⭐⭐ VIP Oro",
+    vip3Desc: "Todos los beneficios anteriores + skins especiales y soporte dedicado.",
+
+    news1Title: "Lanzamiento Experimental 1.29",
+    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
+    news2Title: "De Sobrevivientes a Constructores",
+    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST"
+  },
+
+  ru: {
+    home: "🏠 Главная",
+    news: "📰 Новости",
+    vips: "⭐ VIP",
+    youtube: "🎥 YouTube",
+    discord: "Войти в Discord",
+
+    infoTitle: "Информация о сервере",
+    rulesTitle: "Правила сервера",
+    rules: [
+      "Без читов и эксплойтов.",
+      "Уважайте всех игроков.",
+      "Запрещено убивать в безопасной зоне.",
+      "Админы имеют последнее слово."
+    ],
+
+    vip1Title: "⭐ VIP Бронза",
+    vip1Desc: "Доступ к базовым наборам и приоритет в очередях.",
+    vip2Title: "⭐⭐ VIP Серебро",
+    vip2Desc: "Преимущества Бронзы + эксклюзивные предметы и больше построек.",
+    vip3Title: "⭐⭐⭐ VIP Золото",
+    vip3Desc: "Все предыдущие преимущества + особые скины и поддержка.",
+
+    news1Title: "Экспериментальный релиз 1.29",
+    news1Desc: "Опубликовал Adam Franců | 14 Авг 2025 - 09:30 EST",
+    news2Title: "От выживших к строителям",
+    news2Desc: "Опубликовал Merropa | 18 Июл 2025 - 06:15 EST"
   }
+};
+
+// Função para trocar idioma
+function changeLanguage(lang) {
+  const t = translations[lang];
+  if (!t) return;
+
+  // Navbar
+  document.querySelectorAll("nav a")[0].innerText = t.home;
+  if (document.querySelectorAll("nav a")[1]) document.querySelectorAll("nav a")[1].innerText = t.news;
+  if (document.querySelectorAll("nav a")[2]) document.querySelectorAll("nav a")[2].innerText = t.vips;
+  if (document.querySelectorAll("nav a")[3]) document.querySelectorAll("nav a")[3].innerText = t.youtube;
+
+  // Botão Discord (Home)
+  if (document.querySelector(".btn")) {
+    document.querySelector(".btn").innerText = t.discord;
+  }
+
+  // Página Home
+  if (document.getElementById("info-title")) {
+    document.getElementById("info-title").innerText = t.infoTitle;
+  }
+  if (document.getElementById("rules-title")) {
+    document.getElementById("rules-title").innerText = t.rulesTitle;
+  }
+  if (document.getElementById("rules-list")) {
+    const list = document.getElementById("rules-list");
+    list.innerHTML = "";
+    t.rules.forEach(rule => {
+      const li = document.createElement("li");
+      li.innerText = rule;
+      list.appendChild(li);
+    });
+  }
+
+  // Página VIPs
+  if (document.getElementById("vip1-title")) document.getElementById("vip1-title").innerText = t.vip1Title;
+  if (document.getElementById("vip1-desc")) document.getElementById("vip1-desc").innerText = t.vip1Desc;
+  if (document.getElementById("vip2-title")) document.getElementById("vip2-title").innerText = t.vip2Title;
+  if (document.getElementById("vip2-desc")) document.getElementById("vip2-desc").innerText = t.vip2Desc;
+  if (document.getElementById("vip3-title")) document.getElementById("vip3-title").innerText = t.vip3Title;
+  if (document.getElementById("vip3-desc")) document.getElementById("vip3-desc").innerText = t.vip3Desc;
+
+  // Página Novidades
+  if (document.getElementById("news1-title")) document.getElementById("news1-title").innerText = t.news1Title;
+  if (document.getElementById("news1-desc")) document.getElementById("news1-desc").innerText = t.news1Desc;
+  if (document.getElementById("news2-title")) document.getElementById("news2-title").innerText = t.news2Title;
+  if (document.getElementById("news2-desc")) document.getElementById("news2-desc").innerText = t.news2Desc;
 }
