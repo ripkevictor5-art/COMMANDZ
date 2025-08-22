@@ -1,4 +1,4 @@
-// Dicionário de traduções
+// 🌐 Traduções para todas as línguas
 const translations = {
   pt: {
     home: "🏠 Home",
@@ -8,7 +8,9 @@ const translations = {
     discord: "💬 Discord",
     joinDiscord: "Entrar no Discord",
     serverInfo: "Informações do Servidor",
+    serverInfoDesc: "Servidor com wipe semanal, eventos diários e muito mais.",
     rules: "Regras do Servidor",
+    rulesDesc: "Respeite os outros jogadores, sem cheats ou exploits.",
     newsTitle: "📰 Novidades",
     newsDesc: "Novo wipe aplicado, correções de bugs e balanceamento de loot.",
     shopTitle: "🛒 Loja Z — Produtos e VIPs",
@@ -30,15 +32,17 @@ const translations = {
   en: {
     home: "🏠 Home",
     news: "📰 News",
-    shop: "🛒 Z Shop",
+    shop: "🛒 Store Z",
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
     joinDiscord: "Join Discord",
-    serverInfo: "Server Information",
+    serverInfo: "Server Info",
+    serverInfoDesc: "Server with weekly wipe, daily events and much more.",
     rules: "Server Rules",
+    rulesDesc: "Respect other players, no cheats or exploits.",
     newsTitle: "📰 News",
-    newsDesc: "New wipe applied, bug fixes and loot balancing.",
-    shopTitle: "🛒 Z Shop — Products and VIPs",
+    newsDesc: "New wipe applied, bug fixes and loot balance.",
+    shopTitle: "🛒 Store Z — Products and VIPs",
     vipStarterTitle: "⭐ VIP Starter",
     vipStarterDesc: "Access to basic kits and queue priority.",
     vipSilverTitle: "⭐⭐ VIP Silver",
@@ -48,11 +52,11 @@ const translations = {
     vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanium",
     vipTitaniumDesc: "All previous benefits + maximum privileges, rare kits and exclusive service.",
     carsTitle: "🚗 Cars",
-    carsDesc: "Exclusive vehicles available in the Z Shop.",
+    carsDesc: "Exclusive vehicles available in Store Z.",
     clothesTitle: "👕 Clothes",
-    clothesDesc: "Rare outfits and unique skins to customize your character.",
+    clothesDesc: "Rare clothes and unique skins to customize your character.",
     weaponsTitle: "🔫 Weapons",
-    weaponsDesc: "Rare and customized weapons available only for VIP members."
+    weaponsDesc: "Rare and custom weapons available only for VIP members."
   },
   es: {
     home: "🏠 Inicio",
@@ -60,20 +64,22 @@ const translations = {
     shop: "🛒 Tienda Z",
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
-    joinDiscord: "Unirse a Discord",
+    joinDiscord: "Entrar en Discord",
     serverInfo: "Información del Servidor",
+    serverInfoDesc: "Servidor con wipe semanal, eventos diarios y mucho más.",
     rules: "Reglas del Servidor",
+    rulesDesc: "Respeta a los demás jugadores, sin trampas ni exploits.",
     newsTitle: "📰 Noticias",
-    newsDesc: "Nuevo wipe aplicado, corrección de errores y balanceo de loot.",
+    newsDesc: "Nuevo wipe aplicado, corrección de errores y balance de loot.",
     shopTitle: "🛒 Tienda Z — Productos y VIPs",
     vipStarterTitle: "⭐ VIP Starter",
-    vipStarterDesc: "Acceso a kits básicos y prioridad en las colas.",
+    vipStarterDesc: "Acceso a kits básicos y prioridad en colas.",
     vipSilverTitle: "⭐⭐ VIP Silver",
-    vipSilverDesc: "Beneficios del Starter + artículos exclusivos y mayor límite de base.",
+    vipSilverDesc: "Beneficios del Starter + objetos exclusivos y mayor límite de base.",
     vipGoldTitle: "⭐⭐⭐ VIP Gold",
     vipGoldDesc: "Todos los beneficios anteriores + skins especiales y soporte dedicado.",
     vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanium",
-    vipTitaniumDesc: "Todos los beneficios anteriores + privilegios máximos, kits raros y servicio exclusivo.",
+    vipTitaniumDesc: "Todos los beneficios anteriores + privilegios máximos, kits raros y atención exclusiva.",
     carsTitle: "🚗 Coches",
     carsDesc: "Vehículos exclusivos disponibles en la Tienda Z.",
     clothesTitle: "👕 Ropa",
@@ -88,48 +94,52 @@ const translations = {
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
     joinDiscord: "Rejoindre Discord",
-    serverInfo: "Informations du Serveur",
+    serverInfo: "Infos Serveur",
+    serverInfoDesc: "Serveur avec wipe hebdomadaire, événements quotidiens et plus encore.",
     rules: "Règles du Serveur",
+    rulesDesc: "Respectez les autres joueurs, pas de triche ni d'exploits.",
     newsTitle: "📰 Actualités",
     newsDesc: "Nouveau wipe appliqué, corrections de bugs et équilibrage du loot.",
     shopTitle: "🛒 Boutique Z — Produits et VIPs",
     vipStarterTitle: "⭐ VIP Starter",
-    vipStarterDesc: "Accès aux kits de base et priorité dans les files.",
-    vipSilverTitle: "⭐⭐ VIP Silver",
-    vipSilverDesc: "Avantages du Starter + objets exclusifs et limite de base augmentée.",
-    vipGoldTitle: "⭐⭐⭐ VIP Gold",
-    vipGoldDesc: "Tous les avantages précédents + skins spéciales et support dédié.",
-    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanium",
+    vipStarterDesc: "Accès aux kits de base et priorité dans la file d'attente.",
+    vipSilverTitle: "⭐⭐ VIP Argent",
+    vipSilverDesc: "Avantages Starter + objets exclusifs et plus grande limite de base.",
+    vipGoldTitle: "⭐⭐⭐ VIP Or",
+    vipGoldDesc: "Tous les avantages précédents + skins spéciaux et support dédié.",
+    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titane",
     vipTitaniumDesc: "Tous les avantages précédents + privilèges maximum, kits rares et service exclusif.",
     carsTitle: "🚗 Voitures",
     carsDesc: "Véhicules exclusifs disponibles dans la Boutique Z.",
     clothesTitle: "👕 Vêtements",
     clothesDesc: "Vêtements rares et skins uniques pour personnaliser votre personnage.",
     weaponsTitle: "🔫 Armes",
-    weaponsDesc: "Armes rares et personnalisées disponibles uniquement pour les membres VIP."
+    weaponsDesc: "Armes rares et personnalisées disponibles uniquement pour les VIP."
   },
   de: {
     home: "🏠 Startseite",
     news: "📰 Neuigkeiten",
-    shop: "🛒 Z Shop",
+    shop: "🛒 Shop Z",
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
     joinDiscord: "Discord beitreten",
-    serverInfo: "Serverinformationen",
-    rules: "Serverregeln",
+    serverInfo: "Server-Informationen",
+    serverInfoDesc: "Server mit wöchentlichem Wipe, täglichen Events und mehr.",
+    rules: "Server-Regeln",
+    rulesDesc: "Respektiere andere Spieler, keine Cheats oder Exploits.",
     newsTitle: "📰 Neuigkeiten",
-    newsDesc: "Neuer Wipe durchgeführt, Bugfixes und Loot-Balancing.",
-    shopTitle: "🛒 Z Shop — Produkte und VIPs",
+    newsDesc: "Neuer Wipe durchgeführt, Bugfixes und Loot-Balance.",
+    shopTitle: "🛒 Shop Z — Produkte und VIPs",
     vipStarterTitle: "⭐ VIP Starter",
-    vipStarterDesc: "Zugang zu Basiskits und Warteschlangen-Priorität.",
-    vipSilverTitle: "⭐⭐ VIP Silver",
-    vipSilverDesc: "Starter-Vorteile + exklusive Items und höheres Basislimit.",
+    vipStarterDesc: "Zugang zu Basiskits und Warteschlangenpriorität.",
+    vipSilverTitle: "⭐⭐ VIP Silber",
+    vipSilverDesc: "Starter-Vorteile + exklusive Items und höheres Basenlimit.",
     vipGoldTitle: "⭐⭐⭐ VIP Gold",
     vipGoldDesc: "Alle vorherigen Vorteile + spezielle Skins und dedizierter Support.",
-    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanium",
+    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titan",
     vipTitaniumDesc: "Alle vorherigen Vorteile + maximale Privilegien, seltene Kits und exklusiver Service.",
     carsTitle: "🚗 Autos",
-    carsDesc: "Exklusive Fahrzeuge im Z Shop erhältlich.",
+    carsDesc: "Exklusive Fahrzeuge im Shop Z erhältlich.",
     clothesTitle: "👕 Kleidung",
     clothesDesc: "Seltene Kleidung und einzigartige Skins zur Personalisierung deines Charakters.",
     weaponsTitle: "🔫 Waffen",
@@ -141,45 +151,49 @@ const translations = {
     shop: "🛒 Negozio Z",
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
-    joinDiscord: "Entra su Discord",
-    serverInfo: "Informazioni del Server",
+    joinDiscord: "Entra in Discord",
+    serverInfo: "Info Server",
+    serverInfoDesc: "Server con wipe settimanale, eventi giornalieri e molto altro.",
     rules: "Regole del Server",
+    rulesDesc: "Rispetta gli altri giocatori, niente cheat o exploit.",
     newsTitle: "📰 Novità",
-    newsDesc: "Nuovo wipe applicato, correzione bug e bilanciamento loot.",
-    shopTitle: "🛒 Negozio Z — Prodotti e VIPs",
+    newsDesc: "Nuovo wipe applicato, correzioni di bug e bilanciamento loot.",
+    shopTitle: "🛒 Negozio Z — Prodotti e VIP",
     vipStarterTitle: "⭐ VIP Starter",
-    vipStarterDesc: "Accesso ai kit di base e priorità in coda.",
-    vipSilverTitle: "⭐⭐ VIP Silver",
-    vipSilverDesc: "Vantaggi Starter + oggetti esclusivi e limite base maggiore.",
-    vipGoldTitle: "⭐⭐⭐ VIP Gold",
-    vipGoldDesc: "Tutti i benefici precedenti + skin speciali e supporto dedicato.",
-    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanium",
-    vipTitaniumDesc: "Tutti i benefici precedenti + privilegi massimi, kit rari e servizio esclusivo.",
+    vipStarterDesc: "Accesso a kit base e priorità in coda.",
+    vipSilverTitle: "⭐⭐ VIP Argento",
+    vipSilverDesc: "Vantaggi Starter + oggetti esclusivi e limite base più alto.",
+    vipGoldTitle: "⭐⭐⭐ VIP Oro",
+    vipGoldDesc: "Tutti i vantaggi precedenti + skin speciali e supporto dedicato.",
+    vipTitaniumTitle: "⭐⭐⭐⭐ VIP Titanio",
+    vipTitaniumDesc: "Tutti i vantaggi precedenti + privilegi massimi, kit rari e servizio esclusivo.",
     carsTitle: "🚗 Auto",
     carsDesc: "Veicoli esclusivi disponibili nel Negozio Z.",
     clothesTitle: "👕 Vestiti",
     clothesDesc: "Vestiti rari e skin uniche per personalizzare il tuo personaggio.",
     weaponsTitle: "🔫 Armi",
-    weaponsDesc: "Armi rare e personalizzate disponibili solo per i membri VIP."
+    weaponsDesc: "Armi rare e personalizzate disponibili solo per membri VIP."
   },
   ru: {
-    home: "🏠 Домой",
+    home: "🏠 Главная",
     news: "📰 Новости",
     shop: "🛒 Магазин Z",
     youtube: "🎥 YouTube",
     discord: "💬 Discord",
     joinDiscord: "Войти в Discord",
     serverInfo: "Информация о сервере",
+    serverInfoDesc: "Сервер с еженедельным вайпом, ежедневными событиями и многим другим.",
     rules: "Правила сервера",
+    rulesDesc: "Уважайте других игроков, без читов и эксплойтов.",
     newsTitle: "📰 Новости",
-    newsDesc: "Новый вайп применён, исправлены ошибки и сбалансирован лут.",
-    shopTitle: "🛒 Магазин Z — Товары и VIP",
-    vipStarterTitle: "⭐ VIP Старт",
-    vipStarterDesc: "Доступ к базовым наборам и приоритет в очередях.",
+    newsDesc: "Новый вайп применен, исправления ошибок и баланс лута.",
+    shopTitle: "🛒 Магазин Z — Продукты и VIP",
+    vipStarterTitle: "⭐ VIP Стартовый",
+    vipStarterDesc: "Доступ к базовым наборам и приоритет в очереди.",
     vipSilverTitle: "⭐⭐ VIP Серебро",
-    vipSilverDesc: "Преимущества Старта + эксклюзивные предметы и больший лимит базы.",
+    vipSilverDesc: "Преимущества Стартового + эксклюзивные предметы и больший лимит базы.",
     vipGoldTitle: "⭐⭐⭐ VIP Золото",
-    vipGoldDesc: "Все предыдущие преимущества + специальные скины и выделенная поддержка.",
+    vipGoldDesc: "Все предыдущие преимущества + специальные скины и поддержка.",
     vipTitaniumTitle: "⭐⭐⭐⭐ VIP Титан",
     vipTitaniumDesc: "Все предыдущие преимущества + максимальные привилегии, редкие наборы и эксклюзивное обслуживание.",
     carsTitle: "🚗 Машины",
@@ -187,61 +201,96 @@ const translations = {
     clothesTitle: "👕 Одежда",
     clothesDesc: "Редкая одежда и уникальные скины для персонализации персонажа.",
     weaponsTitle: "🔫 Оружие",
-    weaponsDesc: "Редкое и кастомное оружие доступно только для VIP-участников."
+    weaponsDesc: "Редкое и уникальное оружие доступно только для VIP."
   }
 };
 
-// Função para mudar idioma
+// ======== Troca de idioma ========
 function setLanguage(lang) {
   if (!translations[lang]) return false;
 
-  // Navbar
-  document.querySelectorAll("nav a")[0].innerText = translations[lang].home;
-  document.querySelectorAll("nav a")[1].innerText = translations[lang].news;
-  document.querySelectorAll("nav a")[2].innerText = translations[lang].shop;
-  document.querySelectorAll("nav a")[3].innerText = translations[lang].youtube;
-  document.querySelectorAll("nav a")[4].innerText = translations[lang].discord;
+  const t = translations[lang];
+  const links = document.querySelectorAll("nav a");
 
-  // Botão Discord
-  if (document.querySelector(".btn")) {
-    document.querySelector(".btn").innerText = translations[lang].joinDiscord;
-  }
-
-  // Cards Index
-  if (document.querySelectorAll(".card h2")[0]) {
-    document.querySelectorAll(".card h2")[0].innerText = translations[lang].serverInfo;
-  }
-  if (document.querySelectorAll(".card h2")[1]) {
-    document.querySelectorAll(".card h2")[1].innerText = translations[lang].rules;
+  if (links.length >= 5) {
+    links[0].innerText = t.home;
+    links[1].innerText = t.news;
+    links[2].innerText = t.shop;
+    links[3].innerText = t.youtube;
+    links[4].innerText = t.discord;
   }
 
-  // Novidades
-  if (document.getElementById("news-title")) {
-    document.getElementById("news-title").innerText = translations[lang].newsTitle;
+  if (document.querySelector(".btn")) document.querySelector(".btn").innerText = t.joinDiscord;
+
+  if (document.getElementById("server-info")) {
+    document.getElementById("server-info").innerText = t.serverInfo;
+    document.getElementById("server-info-desc").innerText = t.serverInfoDesc;
   }
-  if (document.getElementById("news-desc")) {
-    document.getElementById("news-desc").innerText = translations[lang].newsDesc;
+  if (document.getElementById("server-rules")) {
+    document.getElementById("server-rules").innerText = t.rules;
+    document.getElementById("server-rules-desc").innerText = t.rulesDesc;
   }
 
-  // Loja Z
-  if (document.getElementById("lojaz-title")) {
-    document.getElementById("lojaz-title").innerText = translations[lang].shopTitle;
-  }
+  if (document.getElementById("news-title")) document.getElementById("news-title").innerText = t.newsTitle;
+  if (document.getElementById("news-desc")) document.getElementById("news-desc").innerText = t.newsDesc;
+
+  if (document.getElementById("lojaz-title")) document.getElementById("lojaz-title").innerText = t.shopTitle;
+
   if (document.getElementById("vip-starter-title")) {
-    document.getElementById("vip-starter-title").innerText = translations[lang].vipStarterTitle;
-    document.getElementById("vip-starter-desc").innerText = translations[lang].vipStarterDesc;
+    document.getElementById("vip-starter-title").innerText = t.vipStarterTitle;
+    document.getElementById("vip-starter-desc").innerText = t.vipStarterDesc;
   }
   if (document.getElementById("vip-silver-title")) {
-    document.getElementById("vip-silver-title").innerText = translations[lang].vipSilverTitle;
-    document.getElementById("vip-silver-desc").innerText = translations[lang].vipSilverDesc;
+    document.getElementById("vip-silver-title").innerText = t.vipSilverTitle;
+    document.getElementById("vip-silver-desc").innerText = t.vipSilverDesc;
   }
   if (document.getElementById("vip-gold-title")) {
-    document.getElementById("vip-gold-title").innerText = translations[lang].vipGoldTitle;
-    document.getElementById("vip-gold-desc").innerText = translations[lang].vipGoldDesc;
+    document.getElementById("vip-gold-title").innerText = t.vipGoldTitle;
+    document.getElementById("vip-gold-desc").innerText = t.vipGoldDesc;
   }
   if (document.getElementById("vip-titanium-title")) {
-    document.getElementById("vip-titanium-title").innerText = translations[lang].vipTitaniumTitle;
-    document.getElementById("vip-titanium-desc").innerText = translations[lang].vipTitaniumDesc;
+    document.getElementById("vip-titanium-title").innerText = t.vipTitaniumTitle;
+    document.getElementById("vip-titanium-desc").innerText = t.vipTitaniumDesc;
   }
+
   if (document.getElementById("cars-title")) {
-    document.getElementById("cars-title").innerText =
+    document.getElementById("cars-title").innerText = t.carsTitle;
+    document.getElementById("cars-desc").innerText = t.carsDesc;
+  }
+  if (document.getElementById("clothes-title")) {
+    document.getElementById("clothes-title").innerText = t.clothesTitle;
+    document.getElementById("clothes-desc").innerText = t.clothesDesc;
+  }
+  if (document.getElementById("weapons-title")) {
+    document.getElementById("weapons-title").innerText = t.weaponsTitle;
+    document.getElementById("weapons-desc").innerText = t.weaponsDesc;
+  }
+
+  return false;
+}
+
+// ======== Abas Loja Z ========
+function openTab(evt, tabName) {
+  const tabcontent = document.querySelectorAll(".tabcontent");
+  const tablinks = document.querySelectorAll(".tablink");
+
+  tabcontent.forEach(el => el.style.display = "none");
+  tablinks.forEach(el => el.classList.remove("active"));
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+
+// ======== Inicialização ========
+document.addEventListener("DOMContentLoaded", () => {
+  let userLang = navigator.language.substring(0, 2);
+  if (!translations[userLang]) userLang = "en";
+  setLanguage(userLang);
+
+  document.querySelectorAll("#lang-menu a").forEach(el => {
+    el.addEventListener("click", e => {
+      e.preventDefault();
+      setLanguage(el.dataset.lang);
+    });
+  });
+});

@@ -17,26 +17,24 @@
       <a href="https://discord.gg" target="_blank">💬 Discord</a>
     </nav>
 
+    <!-- Idiomas -->
     <div class="dropdown">
       <button class="dropbtn">🌐 Idioma ▼</button>
-      <div class="dropdown-content">
-        <a href="#" onclick="return setLanguage('pt')"><img src="flags/br.png" alt=""> Português</a>
-        <a href="#" onclick="return setLanguage('en')"><img src="flags/us.png" alt=""> English</a>
-        <a href="#" onclick="return setLanguage('es')"><img src="flags/es.png" alt=""> Español</a>
-        <a href="#" onclick="return setLanguage('fr')"><img src="flags/fr.png" alt=""> Français</a>
-        <a href="#" onclick="return setLanguage('de')"><img src="flags/de.png" alt=""> Deutsch</a>
-        <a href="#" onclick="return setLanguage('it')"><img src="flags/it.png" alt=""> Italiano</a>
-        <a href="#" onclick="return setLanguage('ru')"><img src="flags/ru.png" alt=""> Русский</a>
+      <div class="dropdown-content" id="lang-menu">
+        <a href="#" data-lang="pt"><span class="flag">🇧🇷</span> Português</a>
+        <a href="#" data-lang="en"><span class="flag">🇺🇸</span> English</a>
+        <a href="#" data-lang="es"><span class="flag">🇪🇸</span> Español</a>
+        <a href="#" data-lang="fr"><span class="flag">🇫🇷</span> Français</a>
+        <a href="#" data-lang="de"><span class="flag">🇩🇪</span> Deutsch</a>
+        <a href="#" data-lang="it"><span class="flag">🇮🇹</span> Italiano</a>
+        <a href="#" data-lang="ru"><span class="flag">🇷🇺</span> Русский</a>
       </div>
     </div>
   </header>
 
   <main>
     <h1 id="news-title">📰 Novidades</h1>
-    <section class="card">
-      <h2>Update 1.2</h2>
-      <p id="news-desc">Novo wipe aplicado, correções de bugs e balanceamento de loot.</p>
-    </section>
+    <p id="news-desc">Novo wipe aplicado, correções de bugs e balanceamento de loot.</p>
   </main>
 </body>
 </html>

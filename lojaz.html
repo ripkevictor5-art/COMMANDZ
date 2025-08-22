@@ -20,14 +20,14 @@
     <!-- Idiomas -->
     <div class="dropdown">
       <button class="dropbtn">🌐 Idioma ▼</button>
-      <div class="dropdown-content">
-        <a href="#" onclick="return setLanguage('pt')"><img src="flags/br.png" alt=""> Português</a>
-        <a href="#" onclick="return setLanguage('en')"><img src="flags/us.png" alt=""> English</a>
-        <a href="#" onclick="return setLanguage('es')"><img src="flags/es.png" alt=""> Español</a>
-        <a href="#" onclick="return setLanguage('fr')"><img src="flags/fr.png" alt=""> Français</a>
-        <a href="#" onclick="return setLanguage('de')"><img src="flags/de.png" alt=""> Deutsch</a>
-        <a href="#" onclick="return setLanguage('it')"><img src="flags/it.png" alt=""> Italiano</a>
-        <a href="#" onclick="return setLanguage('ru')"><img src="flags/ru.png" alt=""> Русский</a>
+      <div class="dropdown-content" id="lang-menu">
+        <a href="#" data-lang="pt"><span class="flag">🇧🇷</span> Português</a>
+        <a href="#" data-lang="en"><span class="flag">🇺🇸</span> English</a>
+        <a href="#" data-lang="es"><span class="flag">🇪🇸</span> Español</a>
+        <a href="#" data-lang="fr"><span class="flag">🇫🇷</span> Français</a>
+        <a href="#" data-lang="de"><span class="flag">🇩🇪</span> Deutsch</a>
+        <a href="#" data-lang="it"><span class="flag">🇮🇹</span> Italiano</a>
+        <a href="#" data-lang="ru"><span class="flag">🇷🇺</span> Русский</a>
       </div>
     </div>
   </header>
@@ -43,7 +43,7 @@
       <button class="tablink" onclick="openTab(event,'weapons')">🔫 Armas</button>
     </div>
 
-    <!-- Conteúdo VIP -->
+    <!-- VIP -->
     <div id="vip" class="tabcontent" style="display:block;">
       <div class="vip-card">
         <h2 id="vip-starter-title">⭐ VIP Starter</h2>
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <!-- Conteúdo Carros -->
+    <!-- Carros -->
     <div id="cars" class="tabcontent">
       <div class="vip-card">
         <h2 id="cars-title">🚗 Carros</h2>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <!-- Conteúdo Roupas -->
+    <!-- Roupas -->
     <div id="clothes" class="tabcontent">
       <div class="vip-card">
         <h2 id="clothes-title">👕 Roupas</h2>
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <!-- Conteúdo Armas -->
+    <!-- Armas -->
     <div id="weapons" class="tabcontent">
       <div class="vip-card">
         <h2 id="weapons-title">🔫 Armas</h2>

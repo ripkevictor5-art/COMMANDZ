@@ -51,11 +51,11 @@ body {
   position: absolute;
   right: 0;
   background-color: #1a1a1a;
-  min-width: 200px;
+  min-width: 180px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 8px #00000088;
-  z-index: 1;
+  box-shadow: 0 0 10px #000a;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -64,15 +64,8 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 14px;
-}
-
-.dropdown-content a img {
-  width: 22px;
-  height: 16px;
-  object-fit: cover;
-  border-radius: 3px;
 }
 
 .dropdown-content a:hover {
@@ -81,6 +74,12 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.flag {
+  font-size: 16px;
+  width: 22px;
+  text-align: center;
 }
 
 /* Hero */
@@ -123,47 +122,42 @@ body {
 /* Conteúdo principal */
 main {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   display: grid;
   gap: 20px;
 }
 
 /* Cards */
-.card,
-.vip-card {
+.card, .vip-card {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 8px #00000088;
+  box-shadow: 0 0 8px #0008;
   transition: transform 0.2s ease;
 }
 
-.card:hover,
-.vip-card:hover {
+.card:hover, .vip-card:hover {
   transform: scale(1.01);
 }
 
-.card h2,
-.vip-card h2 {
+.card h2, .vip-card h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
   border-bottom: 1px solid #333;
   padding-bottom: 5px;
+  color: #fff;
 }
 
-.card p,
-.card ul,
-.card ol,
-.vip-card p {
+.card p, .vip-card p,
+.card ul, .card ol {
   margin-top: 10px;
   font-size: 1rem;
   color: #ddd;
   line-height: 1.6;
 }
 
-.card ul,
-.card ol {
+.card ul, .card ol {
   padding-left: 20px;
 }
 
