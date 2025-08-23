@@ -39,7 +39,7 @@
     <section class="tab-content active" id="carros">
       <div class="card">
         <div class="card-gallery">
-          <img src="https://cdn.discordapp.com/attachments/1281784901154242624/1408583344991768687/image.png?ex=68aa44f7&is=68a8f377&hm=53dcff053b16788ecb0f4bda5d7fb5b317db030dfbe09f3d7ebba2387c2f545f&" alt="TyphoonK Cargo 1">
+          <img src="img/typhoon1.jpg" alt="TyphoonK Cargo 1">
           <img src="img/typhoon2.jpg" alt="TyphoonK Cargo 2">
           <img src="img/typhoon3.jpg" alt="TyphoonK Cargo 3">
         </div>
@@ -60,8 +60,8 @@
           <img src="img/arma2.jpg" alt="Arma 2">
           <img src="img/arma3.jpg" alt="Arma 3">
         </div>
-        <h2>Rifle de Assalto</h2>
-        <p>Poder de fogo confiável para qualquer situação.</p>
+        <h2 id="arma-title">🔫 Rifle de Assalto</h2>
+        <p id="arma-desc">Poder de fogo confiável para qualquer situação.</p>
       </div>
     </section>
 
@@ -73,8 +73,8 @@
           <img src="img/roupa2.jpg" alt="Roupa 2">
           <img src="img/roupa3.jpg" alt="Roupa 3">
         </div>
-        <h2>Traje Tático</h2>
-        <p>Resistência e estilo para os sobreviventes mais preparados.</p>
+        <h2 id="roupa-title">👕 Traje Tático</h2>
+        <p id="roupa-desc">Resistência e estilo para os sobreviventes mais preparados.</p>
       </div>
     </section>
 
@@ -116,7 +116,7 @@
       <!-- Titanium -->
       <div class="card">
         <div class="card-gallery">
-          <img src="https://cdn.discordapp.com/attachments/1281784901154242624/1408581326780629023/image.png?ex=68aa4316&is=68a8f196&hm=6787a45b01504ef97c3bbd21c60f6d35b1cc33f9b849c9be3ad7c22f1854102c&" alt="VIP Titanium 1">
+          <img src="img/vip-titanium1.jpg" alt="VIP Titanium 1">
           <img src="img/vip-titanium2.jpg" alt="VIP Titanium 2">
           <img src="img/vip-titanium3.jpg" alt="VIP Titanium 3">
         </div>
@@ -125,6 +125,14 @@
       </div>
     </section>
   </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <span id="lightbox-prev" class="lightbox-nav lightbox-prev">&#10094;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+    <span id="lightbox-next" class="lightbox-nav lightbox-next">&#10095;</span>
+  </div>
 
   <script src="script.js"></script>
   <script>

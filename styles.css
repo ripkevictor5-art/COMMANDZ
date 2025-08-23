@@ -155,7 +155,7 @@ main {
   padding-left: 20px;
 }
 
-/* Imagem dentro dos cards (single) */
+/* Imagem única dentro de cards */
 .card-img {
   width: 60%;
   max-width: 250px;
@@ -219,8 +219,63 @@ main {
   border-radius: 8px;
   box-shadow: 0 0 6px #00000055;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .card-gallery img:hover {
   transform: scale(1.05);
+}
+
+/* ========================== */
+/*  Lightbox para ampliar img */
+/* ========================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lightbox-prev {
+  left: 30px;
+}
+
+.lightbox-next {
+  right: 30px;
 }
