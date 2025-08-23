@@ -1,11 +1,22 @@
 // Traduções centralizadas
 const translations = {
   pt: {
+    // Navbar
     home: "🏠 Home",
     news: "📰 Novidades",
     lojaz: "🛒 Lojaz",
     youtube: "🎥 YouTube",
     discord: "Entrar no Discord",
+
+    // Abas da Lojaz
+    tabCars: "Carros",
+    tabWeapons: "Armas",
+    tabClothes: "Roupas",
+    tabVips: "VIPs",
+
+    // Carro
+    carTitle: "🚗 TyphoonK Cargo",
+    carDesc: "Um veículo que combina robustez e versatilidade, contando uma blindagem de alto nível e capacidade para até 13 sobreviventes, contando com 1000 slots de armazenamento. Este se torna o veículo perfeito para todo tipo de missão.",
 
     // Home
     infoTitle: "Informações do Servidor",
@@ -17,7 +28,7 @@ const translations = {
       "Admins têm palavra final."
     ],
 
-    // Loja (aba VIPs dentro da lojaz)
+    // VIPs
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Acesso a kits básicos e prioridade em filas do servidor.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -26,16 +37,6 @@ const translations = {
     vip3Desc: "Todos os benefícios anteriores + skins especiais e suporte dedicado.",
     vip4Title: "⭐⭐⭐⭐ VIP Titanium",
     vip4Desc: "Todos os benefícios anteriores + privilégios máximos, kits raros e atendimento exclusivo.",
-
-    // Novidades
-    news1Title: "1.29 Experimental Release",
-    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
-    news2Title: "De Sobreviventes a Construtores",
-    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST",
-    news3Title: "Novo Sistema de Economia",
-    news3Desc: "Publicado por Equipe COMMAND Z | 05 Ago 2025 - 15:00 EST",
-    news4Title: "Expansão de Mapas e Eventos",
-    news4Desc: "Publicado por Equipe COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
   en: {
@@ -45,7 +46,23 @@ const translations = {
     youtube: "🎥 YouTube",
     discord: "Join Discord",
 
-    // VIPs (content inside Lojaz)
+    tabCars: "Cars",
+    tabWeapons: "Weapons",
+    tabClothes: "Clothes",
+    tabVips: "VIPs",
+
+    carTitle: "🚗 TyphoonK Cargo",
+    carDesc: "A vehicle that combines robustness and versatility, featuring high-level armor and capacity for up to 13 survivors, with 1000 storage slots. It becomes the perfect vehicle for every kind of mission.",
+
+    infoTitle: "Server Information",
+    rulesTitle: "Server Rules",
+    rules: [
+      "No use of cheats or exploits.",
+      "Respect all players.",
+      "No killing in safe zones.",
+      "Admins have the final word."
+    ],
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Access to basic kits and queue priority.",
     vip2Title: "⭐⭐ VIP Silver",
@@ -54,16 +71,6 @@ const translations = {
     vip3Desc: "All previous benefits + special skins and dedicated support.",
     vip4Title: "⭐⭐⭐⭐ VIP Titanium",
     vip4Desc: "All previous benefits + maximum privileges, rare kits and exclusive service.",
-
-    // News
-    news1Title: "1.29 Experimental Release",
-    news1Desc: "Published by Adam Franců | Aug 14, 2025 - 09:30 EST",
-    news2Title: "From Survivors to Builders",
-    news2Desc: "Published by Merropa | Jul 18, 2025 - 06:15 EST",
-    news3Title: "New Economy System",
-    news3Desc: "Published by COMMAND Z Team | Aug 05, 2025 - 15:00 EST",
-    news4Title: "Map Expansion and Events",
-    news4Desc: "Published by COMMAND Z Team | Aug 10, 2025 - 12:45 EST"
   },
 
   es: {
@@ -73,7 +80,23 @@ const translations = {
     youtube: "🎥 YouTube",
     discord: "Unirse al Discord",
 
-    // VIPs
+    tabCars: "Autos",
+    tabWeapons: "Armas",
+    tabClothes: "Ropa",
+    tabVips: "VIPs",
+
+    carTitle: "🚗 TyphoonK Cargo",
+    carDesc: "Un vehículo que combina robustez y versatilidad, con un blindaje de alto nivel y capacidad para hasta 13 sobrevivientes, con 1000 espacios de almacenamiento. Se convierte en el vehículo perfecto para todo tipo de misión.",
+
+    infoTitle: "Información del Servidor",
+    rulesTitle: "Reglas del Servidor",
+    rules: [
+      "Prohibido el uso de trampas o exploits.",
+      "Respeta a todos los jugadores.",
+      "Prohibido matar en zonas seguras.",
+      "Los administradores tienen la última palabra."
+    ],
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Acceso a kits básicos y prioridad en colas.",
     vip2Title: "⭐⭐ VIP Plata",
@@ -82,16 +105,6 @@ const translations = {
     vip3Desc: "Todos los beneficios anteriores + skins especiales y soporte dedicado.",
     vip4Title: "⭐⭐⭐⭐ VIP Titanio",
     vip4Desc: "Todos los beneficios anteriores + privilegios máximos, kits raros y atención exclusiva.",
-
-    // Noticias
-    news1Title: "Lanzamiento Experimental 1.29",
-    news1Desc: "Publicado por Adam Franců | 14 Ago 2025 - 09:30 EST",
-    news2Title: "De Sobrevivientes a Constructores",
-    news2Desc: "Publicado por Merropa | 18 Jul 2025 - 06:15 EST",
-    news3Title: "Nuevo Sistema de Economía",
-    news3Desc: "Publicado por Equipo COMMAND Z | 05 Ago 2025 - 15:00 EST",
-    news4Title: "Expansión de Mapas y Eventos",
-    news4Desc: "Publicado por Equipo COMMAND Z | 10 Ago 2025 - 12:45 EST"
   },
 
   ru: {
@@ -101,7 +114,23 @@ const translations = {
     youtube: "🎥 YouTube",
     discord: "Войти в Discord",
 
-    // VIPs
+    tabCars: "Машины",
+    tabWeapons: "Оружие",
+    tabClothes: "Одежда",
+    tabVips: "VIP",
+
+    carTitle: "🚗 TyphoonK Cargo",
+    carDesc: "Транспорт, сочетающий надежность и универсальность, с высоким уровнем брони и вместимостью до 13 выживших, а также 1000 слотами для хранения. Это идеальный транспорт для любых миссий.",
+
+    infoTitle: "Информация о сервере",
+    rulesTitle: "Правила сервера",
+    rules: [
+      "Запрещено использование читов и эксплойтов.",
+      "Уважайте всех игроков.",
+      "Запрещено убивать в безопасных зонах.",
+      "Слово админов является окончательным."
+    ],
+
     vip1Title: "⭐ VIP Starter",
     vip1Desc: "Доступ к базовым наборам и приоритет в очередях.",
     vip2Title: "⭐⭐ VIP Серебро",
@@ -110,81 +139,80 @@ const translations = {
     vip3Desc: "Все предыдущие преимущества + особые скины и поддержка.",
     vip4Title: "⭐⭐⭐⭐ VIP Титан",
     vip4Desc: "Все преимущества + максимальные привилегии, редкие наборы и эксклюзивное обслуживание.",
-
-    // Новости
-    news1Title: "Экспериментальный релиз 1.29",
-    news1Desc: "Опубликовал Adam Franců | 14 Авг 2025 - 09:30 EST",
-    news2Title: "От выживших к строителям",
-    news2Desc: "Опубликовал Merropa | 18 Июл 2025 - 06:15 EST",
-    news3Title: "Новая экономическая система",
-    news3Desc: "Опубликовал Команда COMMAND Z | 05 Авг 2025 - 15:00 EST",
-    news4Title: "Расширение карт и события",
-    news4Desc: "Опубликовал Команда COMMAND Z | 10 Авг 2025 - 12:45 EST"
   }
 };
 
-// Função para trocar idioma
+// Função principal de troca de idioma
 function changeLanguage(lang) {
+  document.documentElement.setAttribute("lang", lang);
   const t = translations[lang];
   if (!t) return;
 
   // Navbar
-  document.querySelectorAll("nav a")[0].innerText = t.home;
-  document.querySelectorAll("nav a")[1].innerText = t.news;
-  document.querySelectorAll("nav a")[2].innerText = t.lojaz; // <-- agora traduz "Lojaz"
-  document.querySelectorAll("nav a")[3].innerText = t.youtube;
+  const navLinks = document.querySelectorAll("nav a");
+  if (navLinks[0]) navLinks[0].innerText = t.home;
+  if (navLinks[1]) navLinks[1].innerText = t.news;
+  if (navLinks[2]) navLinks[2].innerText = t.lojaz;
+  if (navLinks[3]) navLinks[3].innerText = t.youtube;
 
-  // Botão Discord (Home)
-  if (document.querySelector(".btn")) {
-    document.querySelector(".btn").innerText = t.discord;
-  }
+  // Botão Discord
+  const btn = document.querySelector(".btn");
+  if (btn) btn.innerText = t.discord;
 
   // Página Home
-  if (document.getElementById("info-title")) {
-    document.getElementById("info-title").innerText = t.infoTitle;
-  }
-  if (document.getElementById("rules-title")) {
-    document.getElementById("rules-title").innerText = t.rulesTitle;
-  }
-  if (document.getElementById("rules-list")) {
-    const list = document.getElementById("rules-list");
-    list.innerHTML = "";
+  const infoTitle = document.getElementById("info-title");
+  if (infoTitle) infoTitle.innerText = t.infoTitle;
+  const rulesTitle = document.getElementById("rules-title");
+  if (rulesTitle) rulesTitle.innerText = t.rulesTitle;
+  const rulesList = document.getElementById("rules-list");
+  if (rulesList && Array.isArray(t.rules)) {
+    rulesList.innerHTML = "";
     t.rules.forEach(rule => {
       const li = document.createElement("li");
       li.innerText = rule;
-      list.appendChild(li);
+      rulesList.appendChild(li);
     });
   }
 
-  // VIPs dentro da aba LojaZ
-  if (document.getElementById("vip-starter-title")) document.getElementById("vip-starter-title").innerText = t.vip1Title;
-  if (document.getElementById("vip-starter-desc")) document.getElementById("vip-starter-desc").innerText = t.vip1Desc;
-  if (document.getElementById("vip-silver-title")) document.getElementById("vip-silver-title").innerText = t.vip2Title;
-  if (document.getElementById("vip-silver-desc")) document.getElementById("vip-silver-desc").innerText = t.vip2Desc;
-  if (document.getElementById("vip-gold-title")) document.getElementById("vip-gold-title").innerText = t.vip3Title;
-  if (document.getElementById("vip-gold-desc")) document.getElementById("vip-gold-desc").innerText = t.vip3Desc;
-  if (document.getElementById("vip-titanium-title")) document.getElementById("vip-titanium-title").innerText = t.vip4Title;
-  if (document.getElementById("vip-titanium-desc")) document.getElementById("vip-titanium-desc").innerText = t.vip4Desc;
+  // Carros
+  const carTitle = document.getElementById("car-title");
+  if (carTitle && t.carTitle) carTitle.innerText = t.carTitle;
 
-  // Novidades
-  if (document.getElementById("news1-title")) document.getElementById("news1-title").innerText = t.news1Title;
-  if (document.getElementById("news1-desc")) document.getElementById("news1-desc").innerText = t.news1Desc;
-  if (document.getElementById("news2-title")) document.getElementById("news2-title").innerText = t.news2Title;
-  if (document.getElementById("news2-desc")) document.getElementById("news2-desc").innerText = t.news2Desc;
-  if (document.getElementById("news3-title")) document.getElementById("news3-title").innerText = t.news3Title;
-  if (document.getElementById("news3-desc")) document.getElementById("news3-desc").innerText = t.news3Desc;
-  if (document.getElementById("news4-title")) document.getElementById("news4-title").innerText = t.news4Title;
-  if (document.getElementById("news4-desc")) document.getElementById("news4-desc").innerText = t.news4Desc;
+  const carDesc = document.getElementById("car-desc");
+  if (carDesc && t.carDesc) carDesc.innerText = t.carDesc;
+
+  // Abas da Lojaz
+  const tabMap = {
+    carros: { emoji: "🚗", key: "tabCars" },
+    armas: { emoji: "🔫", key: "tabWeapons" },
+    roupas: { emoji: "👕", key: "tabClothes" },
+    vips: { emoji: "⭐", key: "tabVips" }
+  };
+  Object.entries(tabMap).forEach(([tab, { emoji, key }]) => {
+    const btn = document.querySelector(`.tab-btn[data-tab="${tab}"]`);
+    if (btn && t[key]) btn.innerHTML = `${emoji} ${t[key]}`;
+  });
+
+  // VIPs
+  const mapIds = [
+    ["vip-starter-title", "vip1Title"],
+    ["vip-starter-desc", "vip1Desc"],
+    ["vip-silver-title", "vip2Title"],
+    ["vip-silver-desc", "vip2Desc"],
+    ["vip-gold-title", "vip3Title"],
+    ["vip-gold-desc", "vip3Desc"],
+    ["vip-titanium-title", "vip4Title"],
+    ["vip-titanium-desc", "vip4Desc"],
+  ];
+  mapIds.forEach(([id, key]) => {
+    const el = document.getElementById(id);
+    if (el && t[key]) el.innerText = t[key];
+  });
 }
 
-// Auto detecção do idioma do navegador
+// Auto detecção do idioma
 window.onload = function () {
-  let userLang = navigator.language || navigator.userLanguage;
-  userLang = userLang.substring(0, 2);
-
-  if (["pt", "en", "es", "ru"].includes(userLang)) {
-    changeLanguage(userLang);
-  } else {
-    changeLanguage("pt");
-  }
+  let userLang = (navigator.language || navigator.userLanguage || "pt").substring(0, 2);
+  if (!["pt", "en", "es", "ru"].includes(userLang)) userLang = "pt";
+  changeLanguage(userLang);
 };
